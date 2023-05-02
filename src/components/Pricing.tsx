@@ -3,11 +3,11 @@ import PricingItem from "./PricingItem";
 
 const Pricing = () => {
     return (
-        <section className="bg-rose-500 py-24">
+        <section className="py-24 border-b">
 
-            <div className="container mx-auto">
+            <div className="container mx-auto w-2/3">
 
-                <h2 className="text-center text-2xl py-4">Pricing</h2>
+                <h2 className="text-center text-4xl font-black mb-24">Pricing</h2>
             
                 <div className="grid grid-cols-3 gap-4 mb-4">
 

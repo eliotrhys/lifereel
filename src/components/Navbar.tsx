@@ -1,18 +1,28 @@
+import NavbarItem from "./NavbarItem";
+import logo from "../../public/images/logo.png";
+
 const Navbar = () => {
     return (
-        <section className="bg-blue-500 w-full flex justify-between items-center px-4 py-4">
-            
-            <div>🌱 The Lifereel Company</div>
+        <section className="w-full py-4 nav-lifereel sticky top-0">
 
-            <div className="flex items-center">
-                <div className="mr-4">Home</div>
-                <div className="mr-4">Features</div>
-                <div className="mr-4">Examples</div>
-                <div className="mr-4">About</div>
-                <div className="mr-4">FAQ</div>
-                <div className="mr-4">Pricing</div>
-                <div>Contact</div>
+            <div className="container mx-auto flex justify-between items-center">
+            
+                <div>
+                    <img src={logo.src} className="h-8" alt="" />
+                </div>
+
+                <div className="flex items-center text-md font-medium">
+                    <NavbarItem title="Home" link="#" />
+                    <NavbarItem title="Features" link="#" />
+                    <NavbarItem title="Examples" link="#" />
+                    <NavbarItem title="About" link="#" />
+                    <NavbarItem title="FAQ" link="#" />
+                    <NavbarItem title="Pricing" link="#" />
+                    <NavbarItem title="Contact us" link="#" extraClasses="bg-rose-500 px-8 font-bold text-rose-100 !mr-0" />
+                </div>
+
             </div>
+
            
         </section>
     )

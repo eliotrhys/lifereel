@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$lifereel-dark-green: #095256;
+$lifereel-cream: #EDE4DB;
+$lifereel-light-cream: #FDF7EF;
+$lifereel-pink: #FA9D72;
+
+body {
+    background-color: #FDF7EF;
+    color: #36414D;
+}
+
+.about-bg {
+    background-image: url("https://file-uploads.teachablecdn.com/9596f47ca8814b95a36abb02efedcae1/905ca9fea5d04ba0b01fc322f743089b")
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Dovetail MVB", sans-serif;
+}
+
+.bg-lifereel {
+    background-color: $lifereel-dark-green;
+    color: $lifereel-cream;
+
+    &.dark {
+        background-color: darken($lifereel-dark-green, 10%);
+    }
+}
+
+.button-lifereel {
+    transition: 0.3s ease;
+    background-color: $lifereel-pink;
+    color: lighten($lifereel-pink, 40%);
+
+    &:hover {
+        background-color: darken($lifereel-dark-green, 10%);
+        color: $lifereel-cream;
+    }
+}
+
+.nav-lifereel {
+    border-bottom: 1px solid darken($lifereel-dark-green, 5%);
+    background-color: $lifereel-light-cream;
+}
+
+.as-seen-in {
+    border-top: 1px solid darken($lifereel-dark-green, 5%);
+    border-bottom: 1px solid darken($lifereel-dark-green, 5%);
+
+    .item {
+        transition: 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
+.dark-green-separator {
+    border-color: darken($lifereel-dark-green, 20%);
+}
+
+.navbar-item {
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}

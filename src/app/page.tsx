@@ -9,6 +9,7 @@ import Pricing from '@/components/Pricing'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import Examples from '@/components/Examples'
+import HowItWorks from '@/components/HowItWorks'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Jumbotron />
       <Features />
       <Examples />
+      <HowItWorks />
       <About />
       <FAQ />
       <Pricing />

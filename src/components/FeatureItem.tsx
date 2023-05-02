@@ -1,13 +1,29 @@
-const FeatureItem = () => {
+import { StaticImageData } from "next/image";
+
+interface FeatureItemProps 
+{
+    title: string;
+    icon: string;
+    imageUrl: StaticImageData;
+    description: string;
+    extraClasses?: string;
+
+}
+
+const FeatureItem = (props: FeatureItemProps) => {
     return (
 
-        <div>
-            <div>
-                <img src="https://assets.sainsburys-groceries.co.uk/gol/7856691/2/640x640.jpg" alt="" className="rounded-lg mb-4" />
+        <div className={`border ${props.extraClasses ? props.extraClasses : ""} bg-white rounded-lg duration-300 ease-in-out pb-8`}>
+            <div className="p-8">
+                <img src={props.imageUrl.src} alt="" className="rounded-lg border" />
             </div>
 
-            <div className="mb-2">The Interview</div>
-            <div>Lorem ipsum dolor sit amet conceptlicateur amet sin dolor amet.</div>
+            <div className="px-8">
+                <h4 className="font-bold text-2xl mb-2">{props.icon}</h4>
+                <h4 className="mb-4 font-bold text-2xl">{props.title}</h4>
+                <div className="text-lg leading-relaxed">{props.description}</div>
+            </div>
+
         </div>
 
     )

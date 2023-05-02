@@ -1,11 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
-
+  background-color: #FDF7EF;
+  color: #36414D;
 }
 
 .about-bg {
-    background-image: url("https://file-uploads.teachablecdn.com/9596f47ca8814b95a36abb02efedcae1/905ca9fea5d04ba0b01fc322f743089b")
+  background-image: url("https://file-uploads.teachablecdn.com/9596f47ca8814b95a36abb02efedcae1/905ca9fea5d04ba0b01fc322f743089b");
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dovetail MVB", sans-serif;
+}
+
+.bg-lifereel {
+  background-color: #095256;
+  color: #EDE4DB;
+}
+.bg-lifereel.dark {
+  background-color: #042628;
+}
+
+.button-lifereel {
+  transition: 0.3s ease;
+  background-color: #FA9D72;
+  color: white;
+}
+.button-lifereel:hover {
+  background-color: #042628;
+  color: #EDE4DB;
+}
+
+.nav-lifereel {
+  border-bottom: 1px solid #073c3f;
+  background-color: #FDF7EF;
+}
+
+.as-seen-in {
+  border-top: 1px solid #073c3f;
+  border-bottom: 1px solid #073c3f;
+}
+.as-seen-in .item {
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark-green-separator {
+  border-color: black;
+}
+
+.navbar-item {
+  transition: 0.3s ease;
+}
+.navbar-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=globals.css.map */
