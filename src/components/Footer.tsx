@@ -1,9 +1,9 @@
 const Footer = () => {
     return (
-        <section className="bg-slate-100 w-full">
+        <section className="bg-amber-100 w-full">
             
-            <div>
-                <div>Any questions? Email <span>hello@lifereel.co</span></div>
+            <div className="text-center py-4">
+                <div className="text-4xl">Any questions? Email <span>hello@lifereel.co</span></div>
             </div>
 
         </section>

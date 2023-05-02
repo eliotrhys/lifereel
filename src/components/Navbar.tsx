@@ -1,14 +1,16 @@
 const Navbar = () => {
     return (
-        <section className="bg-blue-500 w-full flex justify-between items-center">
+        <section className="bg-blue-500 w-full flex justify-between items-center px-4 py-4">
+            
             <div>🌱 The Lifereel Company</div>
+
             <div className="flex items-center">
-                <div>Home</div>
-                <div>Features</div>
-                <div>Examples</div>
-                <div>About</div>
-                <div>FAQ</div>
-                <div>Pricing</div>
+                <div className="mr-2">Home</div>
+                <div className="mr-2">Features</div>
+                <div className="mr-2">Examples</div>
+                <div className="mr-2">About</div>
+                <div className="mr-2">FAQ</div>
+                <div className="mr-2">Pricing</div>
                 <div>Contact</div>
             </div>
            

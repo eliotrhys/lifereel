@@ -1,25 +1,20 @@
+import FAQItem from "./FAQItem";
+
 const FAQ = () => {
     return (
-        <section className="bg-teal-500 w-full">
-            
-            <div className="border-b-slate-900 mb-4">
-                <div className="flex items-center justify-between">
-                    <div>What is the something something something?</div>
-                    <div>^</div>
-                </div>
-            </div>
+        <section className="bg-teal-500 py-24">
 
-            <div className="border-b-slate-900 mb-4">
-                <div className="flex items-center justify-between">
-                    <div>What is the something something something?</div>
-                    <div>^</div>
-                </div>
-            </div>
+            <div className="container mx-auto">
 
-            <div className="border-b-slate-900 mb-4">
-                <div className="flex items-center justify-between">
-                    <div>What is the something something something?</div>
-                    <div>^</div>
+                <h2 className="text-center text-2xl py-4">FAQ</h2>
+
+
+                <div className="w-1/2 mx-auto">
+                    <FAQItem />
+                    <FAQItem />
+                    <FAQItem />
+                    <FAQItem />
+                    <FAQItem />
                 </div>
             </div>
 

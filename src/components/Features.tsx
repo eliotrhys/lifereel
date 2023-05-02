@@ -1,49 +1,26 @@
+import Button from "./Button";
+import FeatureItem from "./FeatureItem";
+
 const Features = () => {
     return (
-        <section className="bg-orange-500 w-full">
+        <section className="bg-orange-500 w-full py-24">
+
+            <div className="container mx-auto">
+
+                <h2 className="text-center text-2xl py-4">What makes a Lifereel?</h2>
             
-            <div className="grid grid-cols-4">
+                <div className="grid grid-cols-4 gap-4">
 
-                <div>
-                    <div>
-                        <img src="https://assets.sainsburys-groceries.co.uk/gol/7856691/2/640x640.jpg" alt="" />
-                    </div>
+                    <FeatureItem />
+                    <FeatureItem />
+                    <FeatureItem />
+                    <FeatureItem />
 
-                    <div>The Interview</div>
-                    <div>Lorem ipsum dolor sit amet conceptlicateur amet sin dolor amet.</div>
                 </div>
-
-                <div>
-                    <div>
-                        <img src="https://assets.sainsburys-groceries.co.uk/gol/7856691/2/640x640.jpg" alt="" />
-                    </div>
-
-                    <div>The Interview</div>
-                    <div>Lorem ipsum dolor sit amet conceptlicateur amet sin dolor amet.</div>
-                </div>
-
-                <div>
-                    <div>
-                        <img src="https://assets.sainsburys-groceries.co.uk/gol/7856691/2/640x640.jpg" alt="" />
-                    </div>
-
-                    <div>The Interview</div>
-                    <div>Lorem ipsum dolor sit amet conceptlicateur amet sin dolor amet.</div>
-                </div>
-
-                <div>
-                    <div>
-                        <img src="https://assets.sainsburys-groceries.co.uk/gol/7856691/2/640x640.jpg" alt="" />
-                    </div>
-
-                    <div>The Interview</div>
-                    <div>Lorem ipsum dolor sit amet conceptlicateur amet sin dolor amet.</div>
-                </div>
-
             </div>
 
-            <div>
-                <a href="" className="bg-green-500">Get started</a>
+            <div className="mx-auto text-center">
+                <Button />
             </div>
 
         </section>
