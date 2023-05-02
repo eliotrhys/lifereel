@@ -6,7 +6,9 @@ const About = () => {
             
             <div className="grid grid-cols-2">
 
-                <div className="about-bg bg-cover bg-no-repeat bg-center"></div>
+                <div className="">
+                    <img src="https://file-uploads.teachablecdn.com/9596f47ca8814b95a36abb02efedcae1/905ca9fea5d04ba0b01fc322f743089b" className="w-full" alt="" />
+                </div>
 
                 <div className="p-14 py-24">
 
