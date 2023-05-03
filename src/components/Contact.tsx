@@ -1,11 +1,11 @@
 const FAQ = () => {
     return (
-        <section className="py-24">
+        <section className="py-24" id="contact">
 
             <div className="container mx-auto">
                 
                 <div>
-                    <h2 className="text-center text-4xl font-black mb-24">Contact</h2>
+                    <h2 className="text-center text-4xl font-black mb-24">Contact us</h2>
 
                     <div className="w-1/3 mx-auto">
                         <form>

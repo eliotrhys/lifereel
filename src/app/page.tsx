@@ -20,7 +20,7 @@ export default function Home() {
       <Jumbotron />
       <Features />
       <Examples />
-      <HowItWorks />
+      {/* <HowItWorks /> */}
       <About />
       <FAQ />
       <Pricing />

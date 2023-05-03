@@ -22,9 +22,13 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #042628;
 }
 
+.bg-dark-cream {
+  background-color: #FDE3CC;
+}
+
 .button-lifereel {
   transition: 0.3s ease;
-  background-color: #FA9D72;
+  background-color: #FA9B75;
   color: white;
 }
 .button-lifereel:hover {

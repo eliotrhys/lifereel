@@ -11,7 +11,7 @@ const Footer = () => {
             
             <div className="flex justify-center">
                 <div className="mx-auto text-center">
-                    <img src={tree.src} alt="tree" />
+                    <img src={tree.src} className="h-24" alt="tree" />
                 </div>
             </div>
         </section>

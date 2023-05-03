@@ -7,7 +7,7 @@ import photosVideosImage from "../../public/images/features/photosvideos.gif";
 
 const Features = () => {
     return (
-        <section className="w-full mt-24">
+        <section className="w-full pt-24" id="features">
 
             <div className="container mx-auto">
 

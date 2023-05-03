@@ -5,7 +5,7 @@
 $lifereel-dark-green: #095256;
 $lifereel-cream: #EDE4DB;
 $lifereel-light-cream: #FDF7EF;
-$lifereel-pink: #FA9D72;
+$lifereel-pink: #FA9B75;
 
 body {
     background-color: #FDF7EF;
@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
     &.dark {
         background-color: darken($lifereel-dark-green, 10%);
     }
+}
+
+.bg-dark-cream {
+    background-color: #FDE3CC;
 }
 
 .button-lifereel {

@@ -10,7 +10,7 @@ const Jumbotron = () => {
                 <div className="container mx-auto py-6">
 
                     <h1 className="text-5xl font-black leading-relaxed text-center">We Make Lifereels</h1>
-                    <h2 className="text-2xl font-black leading-relaxed mb-6 text-center">Lifereels are documentaries about <span className="text-rose-300">your loved ones</span></h2>
+                    <h2 className="text-2xl font-black leading-relaxed mb-6 text-center">Lifereels are video memoirs about <span className="text-rose-300">your loved ones</span></h2>
 
                     <div className="bg-lifereel rounded-lg border dark-green-separator">
 
