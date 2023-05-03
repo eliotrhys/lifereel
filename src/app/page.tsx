@@ -10,6 +10,7 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import Examples from '@/components/Examples'
 import HowItWorks from '@/components/HowItWorks'
+import LifereelAcademy from '@/components/LifereelAcademy'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function Home() {
       <About />
       <FAQ />
       <Pricing />
+      <LifereelAcademy />
       <Contact />
       <Footer />
     </main>

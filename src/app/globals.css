@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Dovetail MVB", sans-serif;
 }
 
+.text-cream {
+  color: #EDE4DB;
+}
+
 .bg-lifereel {
   background-color: #095256 !important;
   color: #EDE4DB !important;
@@ -24,6 +28,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-dark-cream {
   background-color: #FDE3CC;
+}
+
+.bg-lifereel-pink {
+  background-color: #FA9B75;
 }
 
 .button-lifereel {
@@ -58,6 +66,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.pricing-feature-list:last-child {
+.pricing-feature-list .item.isPremium:last-child {
   border-bottom: 0px !important;
 }/*# sourceMappingURL=globals.css.map */

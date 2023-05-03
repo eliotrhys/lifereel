@@ -9,15 +9,15 @@ const Pricing = () => {
 
             <div className="bg-lifereel w-full">
 
-                <div className="container mx-auto w-2/3">
+                <div className="container mx-auto w-full lg:w-2/3 px-4 lg:px-0">
 
                     <h2 className="text-center text-4xl font-black mb-24">Pricing</h2>
                 
-                    <div className="grid grid-cols-3 gap-4 mb-12">
+                    <div className="grid lg:grid-cols-3 gap-4 mb-12">
 
-                        <PricingItem title="Basic" description="Blah blah blah" price={300} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion"]} />
-                        <PricingItem title="Classic" description="Blah blah blah" price={300} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion", "Edited"]} />
-                        <PricingItem title="Premium" description="Blah blah blah" price={300} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion", "Edited", "Something"]} />
+                        <PricingItem title="Basic" icon="👍" description="Film a Lifereel for your loved one, and create a family heirloom that will last forever" price={600} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion"]} />
+                        <PricingItem title="Classic" icon="📽️" description="A full Lifereel, with a short edit and something something else and something else" price={2000} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion", "Edited"]} />
+                        <PricingItem title="Premium" icon="🤩" description="Our Premium solution, including scanned photos, videos and more and something else" price={6000} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion", "Edited", "Something"]} isPremium={true} />
 
                     </div>
 

@@ -36,7 +36,7 @@ const Navbar = () => {
       }, []);
 
     return (
-        <section className="w-full py-4 nav-lifereel sticky top-0 z-20 bg-lifereel">
+        <section className="w-full py-4 px-4 lg:px-0 nav-lifereel sticky top-0 z-20 bg-lifereel">
 
             <div className="container mx-auto flex justify-between items-center">
             
@@ -44,14 +44,25 @@ const Navbar = () => {
                     <img src={isScrolled ? logo.src : lightLogo.src} className="h-8" alt="" />
                 </div>
 
-                <div className="flex items-center text-md font-medium">
+                <div className="items-center text-md font-medium hidden lg:flex">
                     <NavbarItem title="Home" link="#" />
+                    <NavbarItem title="What are Lifereels?" link="#features" />
                     <NavbarItem title="Features" link="#features" />
                     <NavbarItem title="Examples" link="#examples" />
-                    <NavbarItem title="About" link="#about" />
+                    <NavbarItem title="About me" link="#about" />
                     <NavbarItem title="FAQ" link="#faq" />
                     <NavbarItem title="Pricing" link="#pricing" />
                     <NavbarItem title="Contact us" link="#contact" extraClasses="bg-rose-500 hover:bg-rose-700 px-8 font-medium text-rose-100 !mr-0" />
+                </div>
+
+                <div className="flex lg:hidden cursor-pointer">
+                    <div>
+                        { isScrolled ? 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu stroke-slate-800"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                            :
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu stroke-white"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                        }
+                    </div>
                 </div>
 
             </div>

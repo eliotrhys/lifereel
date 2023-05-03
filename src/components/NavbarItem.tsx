@@ -7,7 +7,7 @@ interface NavbarItemProps
 
 const NavbarItem = (props: NavbarItemProps) => {
     return (
-        <a href={props.link} className={`mr-8 p-4 rounded-lg navbar-item ${props.extraClasses ? props.extraClasses : ""}`}>{props.title}</a>
+        <a href={props.link} className={`mr-8 p-4 rounded-lg navbar-item text-center ${props.extraClasses ? props.extraClasses : ""}`}>{props.title}</a>
     )
 }
 
