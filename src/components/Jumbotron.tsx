@@ -2,70 +2,112 @@ import AsSeenOnItem from "./AsSeenOnItem";
 import Button from "./Button";
 
 import asSeenOnYouTube from "../../public/images/as-seen-on/youtube.png";
+import underline from "../../public/images/shapes/underline.svg";
+import photos from "../../public/images/photos/photos.png";
+import videos from "../../public/images/photos/videos.png";
+
+import scrap from "../../public/images/shapes/scrap.png";
+
 
 const Jumbotron = () => {
     return (
         <section>
             <div className="">
-                <div className="container mx-auto py-6">
+                <div className="bg-lifereel">
 
-                    <h1 className="text-5xl font-black leading-relaxed text-center">We Make Lifereels</h1>
-                    <h2 className="text-2xl font-black leading-relaxed mb-6 text-center">Lifereels are video memoirs about <span className="text-rose-300">your loved ones</span></h2>
+                    <div className="grid grid-cols-12 pt-4">
 
-                    <div className="bg-lifereel rounded-lg border dark-green-separator">
-
-                        <div className="grid grid-cols-12">
-
-                            <div className="col-span-5 flex items-center border-r dark-green-separator">
-                                <div className="p-12">
-
-                                    <ul className="mb-8 text-xl leading-relaxed">
-                                        <li className="mb-8 flex bg-lifereel dark rounded-lg p-8">
-                                            <div className="mr-2">📘</div>
-                                            <div className="text-medium">We work with you and your family to record amazing <strong>Netflix-quality video memoirs</strong></div>
-                                        </li>
-                                        <li className="mb-8 flex bg-lifereel dark rounded-lg p-8">
-                                            <div className="mr-2">📘</div>
-                                            <div className="text-medium">Then we add your old photos, videos and music</div>
-                                        </li>
-                                        <li className="mb-8 flex bg-lifereel dark rounded-lg p-8">
-                                            <div className="mr-2">📘</div>
-                                            <div className="text-medium">When we're done, you'll have an unbelievable, unique film about your loved one.</div>
-                                        </li>
-                                    </ul>
-
-                                    <Button />
-                                </div>
-                            </div>
-
-                            <div className="col-span-7">
-                                <div className="border-b dark-green-separator">
-                                    <div className="p-12">
-                                        <div className="mb-4 w-2/3 mx-auto">
-                                            <iframe width="560" height="315" className="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/F9Pak63kaPE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                                        </div>
-                                        <div className="text-center text-2xl">Watch Oscar explain what we do!</div>
-                                    </div>
-                                </div>
-                                <div className="p-12">
-                                    <div className="grid grid-cols-3 gap-4">
-                                        <div className="bg-lifereel dark text-white p-8 rounded-lg text-center">100 Lifereels Made</div>
-                                        <div className="bg-lifereel dark text-white p-8 rounded-lg text-center">Covers all of the UK</div>
-                                        <div className="bg-lifereel dark text-white p-8 rounded-lg text-center">Something else</div>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <div className="col-span-3">
+                            <img src={photos.src} alt="" className="w-full" />
                         </div>
+
+                        <div className="col-span-6">
+                            <div className="mb-4 w-full mx-auto flex justify-center items-end relative">
+                                <div className="">
+                                    <iframe width="560" height="315" className="aspect-video rounded-lg mx-auto" src="https://www.youtube.com/embed/F9Pak63kaPE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                </div>
+                            </div>
+
+                            <div className="mb-8">
+                                <div className="mb-4">
+                                    <div className="relative">
+                                        <h1 className="text-6xl font-black text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-slate-900 whitespace-nowrap">We Make Lifereels<span className="text-rose-500 ml-1">.</span></h1>
+                                        <div>
+                                            <img src={scrap.src} alt="paper scrap" className="w-full" />
+                                        </div>
+                                    </div>
+                                    <h2 className="text-2xl font-medium leading-relaxed text-center">"Video memoirs" about your loved ones</h2>
+                                </div>
+
+
+                                <div className="flex flex-col justify-center items-center w-full">
+                                    <span>
+                                        <img src={underline.src} className="h-10" alt="underline" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-span-3">
+                            <div className="flex justify-end items-center">
+                                <div>
+                                    <img src={videos.src} alt="" className="" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div className="container mx-auto py-6">
+
+                        <ul className="grid grid-cols-3 gap-12 text-xl leading-relaxed mb-12">
+
+                            <li className="mb-4 flex bg-lifereel dark rounded-lg">
+                                <div className="p-2 flex items-center text-5xl h-full bg-teal-500 border border-teal-600 rounded-lg -m-6">
+                                    <div className="w-36 h-full bg-cover bg-center rounded-lg border border-teal-600" style={{backgroundImage: "url('https://media.istockphoto.com/id/612716922/photo/senior-woman-laughing.jpg?b=1&s=170667a&w=0&k=20&c=Hc02t4SfhH5a8l7bLejsN2pwVZJNvh1hWNBDXJeCMBA=')"}}></div>
+                                </div>
+                                <div className="p-12 py-8 text-medium flex items-center">
+                                    <div>We work with you and your family to record amazing <strong>Netflix-quality video memoirs</strong></div>
+                                </div>
+                            </li>
+
+                            <li className="mb-4 flex bg-lifereel dark rounded-lg">
+                            <div className="p-2 flex items-center text-5xl h-full bg-violet-500 border border-violet-600 rounded-lg -m-6">
+                                    <div className="w-36 h-full bg-cover bg-center rounded-lg border-2 border-violet-600" style={{backgroundImage: "url('https://static.standard.co.uk/2022/08/02/10/marco-xu-ToUPBCO62Lw-unsplashjpg?width=1200&auto=webp&quality=75')"}}></div>
+                                </div>
+                                <div className="p-12 py-8 text-medium flex items-center">
+                                    <div>Then we add your old photos, videos and music</div>
+                                </div>
+                            </li>
+
+                            <li className="mb-4 flex bg-lifereel dark rounded-lg">
+                                <div className="p-2 flex items-center text-5xl h-full bg-amber-500 border border-amber-600 rounded-lg -m-6">
+                                    <div className="w-36 h-full bg-cover bg-center rounded-lg border-2 border-amber-600" style={{backgroundImage: "url('https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_42/2606536/181016-hugs-mn-1305.jpg')"}}></div>
+                                </div>
+                                <div className="p-12 py-8 text-medium flex items-center">
+                                    <div>When we're done, you'll have an unbelievable, unique film about your loved one</div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div className="text-center">
+                            <Button />
+                        </div>
+
                     </div>
                 </div>
 
-                <div className="as-seen-in py-8 mx-auto bg-slate-800 text">
+                <div className="bg-lifereel">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#20293A" fill-opacity="1" d="M0,64L20,85.3C40,107,80,149,120,144C160,139,200,85,240,101.3C280,117,320,203,360,245.3C400,288,440,288,480,245.3C520,203,560,117,600,96C640,75,680,117,720,160C760,203,800,245,840,224C880,203,920,117,960,90.7C1000,64,1040,96,1080,128C1120,160,1160,192,1200,192C1240,192,1280,160,1320,133.3C1360,107,1400,85,1420,74.7L1440,64L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+                </div>
+
+                <div className="as-seen-on py-8 mx-auto bg-slate-800 text">
                     <div className="container mx-auto">
 
                         <div className="text-center font-medium text-2xl mb-4 text-white">As seen on</div>
 
-                        <div className="grid grid-cols-6 gap-4">
+                        <div className="grid grid-cols-6 gap-4 mb-4">
                             
                             <AsSeenOnItem altText="YouTube" imageUrl={asSeenOnYouTube}/>
                             <AsSeenOnItem altText="YouTube" imageUrl={asSeenOnYouTube}/>
@@ -76,8 +118,20 @@ const Jumbotron = () => {
 
                         </div>
 
+                        <div className="grid grid-cols-6 gap-4">
+                            <div className="bg-slate-900 text-white p-8 rounded-lg text-center">100 Lifereels Made</div>
+                            <div className="bg-slate-900 text-white p-8 rounded-lg text-center">Covers all of the UK</div>
+                            <div className="bg-slate-900 text-white p-8 rounded-lg text-center">Something else</div>
+                            <div className="bg-slate-900 text-white p-8 rounded-lg text-center">Something else</div>
+                            <div className="bg-slate-900 text-white p-8 rounded-lg text-center">Something else</div>
+                            <div className="bg-slate-900 text-white p-8 rounded-lg text-center">Something else</div>
+                        </div>
+
+
                     </div>
                 </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#20293A" fill-opacity="1" d="M0,192L20,208C40,224,80,256,120,250.7C160,245,200,203,240,170.7C280,139,320,117,360,106.7C400,96,440,96,480,96C520,96,560,96,600,133.3C640,171,680,245,720,234.7C760,224,800,128,840,117.3C880,107,920,181,960,181.3C1000,181,1040,107,1080,112C1120,117,1160,203,1200,224C1240,245,1280,203,1320,176C1360,149,1400,139,1420,133.3L1440,128L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
 
             </div>
             

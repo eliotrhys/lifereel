@@ -13,9 +13,9 @@ interface FeatureItemProps
 const FeatureItem = (props: FeatureItemProps) => {
     return (
 
-        <div className={`border ${props.extraClasses ? props.extraClasses : ""} bg-white rounded-lg duration-300 ease-in-out pb-8`}>
+        <div className={`border border-slate-900 ${props.extraClasses ? props.extraClasses : ""} bg-white rounded-lg duration-300 ease-in-out pb-8`}>
             <div className="p-8">
-                <img src={props.imageUrl.src} alt="" className="rounded-lg border" />
+                <img src={props.imageUrl.src} alt="" className="rounded-lg border border-slate-900" />
             </div>
 
             <div className="px-8">

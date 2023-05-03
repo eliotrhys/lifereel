@@ -15,11 +15,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-lifereel {
-  background-color: #095256;
-  color: #EDE4DB;
+  background-color: #095256 !important;
+  color: #EDE4DB !important;
 }
 .bg-lifereel.dark {
-  background-color: #042628;
+  background-color: #042628 !important;
 }
 
 .bg-dark-cream {
@@ -37,15 +37,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-lifereel {
+  transition: 0.3s ease;
   border-bottom: 1px solid #073c3f;
   background-color: #FDF7EF;
 }
 
-.as-seen-in {
-  border-top: 1px solid #073c3f;
-  border-bottom: 1px solid #073c3f;
-}
-.as-seen-in .item {
+.as-seen-on .item {
   transition: 0.3s ease;
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -59,4 +56,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-item:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pricing-feature-list:last-child {
+  border-bottom: 0px !important;
 }/*# sourceMappingURL=globals.css.map */
