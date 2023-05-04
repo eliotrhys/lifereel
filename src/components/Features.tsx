@@ -11,9 +11,10 @@ const Features = () => {
 
             <div className="container mx-auto px-4 lg:px-0">
 
-                <div className="mb-24 text-center">
+                <div className="mb-12 lg:mb-24 pt-12 lg:pt-0 text-center">
                     <h2 className="text-4xl font-black mb-6">What makes a Lifereel?</h2>
-                    <div className="text-xl font-medium">Everyone has an amazing story to tell, and a Lifereel is the best way to immortalise them for future generations.</div>
+
+                    <div className="text-xl leading-relaxed font-medium">Everyone has an amazing story to tell, and a Lifereel is the best way to immortalise them for future generations.</div>
                 </div>
                 
             
@@ -22,7 +23,7 @@ const Features = () => {
                     <FeatureItem title="The Interview" description="This is a little bit of lorem ipsum text here" imageUrl={interviewImage} icon="🎙️" extraClasses="bg-lifereel lg:hover:mt-0" />
                     <FeatureItem title="Photos" description="This is a little bit of lorem ipsum text here" imageUrl={homeMoviesImage} icon="📷" extraClasses="bg-dark-cream lg:mt-14 lg:hover:mt-0" />
                     <FeatureItem title="Videos" description="This is a little bit of lorem ipsum text here" imageUrl={photosVideosImage} icon="📽️" extraClasses="bg-slate-800 text-cream lg:hover:mt-0" />
-                    <FeatureItem title="Music" description="This is a little bit of lorem ipsum text here" imageUrl={photosVideosImage} icon="🎹" extraClasses="mt-14 lg:hover:mt-0" />
+                    <FeatureItem title="Music" description="This is a little bit of lorem ipsum text here" imageUrl={photosVideosImage} icon="🎹" extraClasses="bg-rose-500 text-cream lg:mt-14 lg:hover:mt-0" />
 
                 </div>
 
@@ -37,7 +38,7 @@ const Features = () => {
                     </ul>
                 </div>
 
-                <div className="mx-auto text-center">
+                <div className="mx-auto text-center pb-12 lg:pb-4">
                     <Button />
                 </div>
             </div>

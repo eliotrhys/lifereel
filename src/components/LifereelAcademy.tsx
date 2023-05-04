@@ -5,9 +5,9 @@ import Button from "./Button";
 
 const LifereelAcademy = () => {
     return (
-        <section className="w-full mb-24 px-4 lg:px-0">
+        <section className="w-full mb-12 lg:mb-24 px-4 lg:px-0">
 
-            <div className="container mx-auto bg-slate-800 rounded-lg">
+            <div className="container mx-auto lg:w-2/3 bg-slate-800 rounded-lg">
                 <div className="grid lg:grid-cols-2">
                     <div className="flex items-center p-6">
                         <div className="lg:p-4">

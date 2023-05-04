@@ -13,7 +13,7 @@ const FAQItem = (props: FAQItemProps) => {
     };
 
     return (
-        <div className="border-b border-black py-8 w-full">
+        <div className="border-b-2 border-black py-8 w-full">
             <div onClick={toggleAnswer} className="flex items-center justify-between text-xl font-medium cursor-pointer">
                 <div className="font-semibold">{props.question}</div>
                 <div>

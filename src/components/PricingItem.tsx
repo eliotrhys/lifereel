@@ -8,6 +8,7 @@ interface PricingItemProps {
 }
 
 const PricingItem = (props: PricingItemProps) => {
+
     return (
 
         <div className={`border rounded-lg ${props.isPremium ? "bg-slate-800 text-cream border-slate-500" : "bg-dark-cream text-slate-800 border-slate-800"}`}>
@@ -36,9 +37,9 @@ const PricingItem = (props: PricingItemProps) => {
 
                 <ul className="text-medium pricing-feature-list">
 
-                    {props.features.map((feature) => (
-                        <li className={`item px-8 py-6 border-b ${props.isPremium ? "isPremium border-slate-500" : "border-slate-800"}  flex items-center font-medium`}>
-                            <span className="mr-4">
+                    {props.features.map((feature, index) => (
+                        <li key={index} className={`item px-8 py-6 border-b ${props.isPremium ? "isPremium border-slate-500" : "border-slate-800"}  flex items-center font-medium`}>
+                            <span className="mr-4 p-1 rounded-lg bg-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide lucide-check ${props.isPremium ? "stroke-rose-500" : "stroke-violet-800"}`}><polyline points="20 6 9 17 4 12"></polyline></svg>
                             </span>
                             <span>{feature}</span>

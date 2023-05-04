@@ -5,7 +5,7 @@ const FAQ = () => {
             <div className="container mx-auto px-4 lg:px-0">
                 
                 <div>
-                    <h2 className="text-center text-4xl font-black mb-24">Contact us</h2>
+                    <h2 className="text-center text-4xl font-black mb-12 lg:mb-24 pt-12 lg:pt-0">Contact us</h2>
 
                     <form className="w-full lg:w-2/4 mx-auto">
                         <div className="lg:grid lg:grid-cols-2 gap-4">
@@ -32,7 +32,7 @@ const FAQ = () => {
                         </div>
                     </form>
 
-                    <div className="text-center">
+                    <div className="text-center pb-12 lg:pb-4">
                         <button type="submit" className="button-lifereel w-full lg:w-auto p-4 px-8 rounded-lg inline-block font-medium text-lg duration-300 ease-in-out">Let's get started!</button>
                     </div>
 

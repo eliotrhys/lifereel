@@ -68,4 +68,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .pricing-feature-list .item.isPremium:last-child {
   border-bottom: 0px !important;
+}
+
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  right: -350px; /* Position offscreen */
+  bottom: 0;
+  width: 350px;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: 0.3s ease; /* Add right transition */
+  border-left: 4px solid black;
+  overflow: scroll;
+}
+.offcanvas-menu.open {
+  right: 0px; /* Position offscreen */
+  transform: translateX(0); /* Show menu */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.offcanvas-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }/*# sourceMappingURL=globals.css.map */

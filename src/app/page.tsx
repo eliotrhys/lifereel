@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Jumbotron from '@/components/Jumbotron'
@@ -11,13 +13,23 @@ import Footer from '@/components/Footer'
 import Examples from '@/components/Examples'
 import HowItWorks from '@/components/HowItWorks'
 import LifereelAcademy from '@/components/LifereelAcademy'
+import { useState } from 'react'
+import SideMenu from '@/components/SideMenu'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
+  };
+  
   return (
     <main className="">
-      <Navbar />
+      <SideMenu isOpen={isMenuOpen} onMenuToggle={handleMenuToggle} />
+      <Navbar onMenuToggle={handleMenuToggle} />
       <Jumbotron />
       <Features />
       <Examples />
