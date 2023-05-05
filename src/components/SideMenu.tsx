@@ -34,7 +34,7 @@ export default function SideMenu(props: SideMenuProps) {
             <NavbarItem title="FAQ" arrow={true} link="#faq" extraClasses="block !text-left border-b !rounded-none !mr-0" />
             <NavbarItem title="Pricing" arrow={true} link="#pricing" extraClasses="block !text-left border-b !rounded-none !mr-0" />
             <div className="mt-4 px-4">
-                <NavbarItem title="Contact us" link="#contact" extraClasses="bg-rose-500 hover:bg-rose-700 px-8 font-medium text-rose-100 !mr-0 block" />
+                <NavbarItem title="Contact us" link="#contact" extraClasses="bg-rose-500 hover:bg-rose-700 px-8 font-medium text-rose-100 !mr-0 block justify-center" />
             </div>
         </div>
                 

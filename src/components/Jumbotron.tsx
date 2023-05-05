@@ -59,33 +59,33 @@ const Jumbotron = () => {
                     </div>
 
 
-                    <div className="container mx-auto px-12 lg:px-0 py-6">
+                    <div className="container mx-auto px-4 lg:px-0 py-6">
 
-                        <ul className="grid lg:grid-cols-3 gap-12 text-xl leading-relaxed mb-12">
+                        <ul className="lg:grid lg:grid-cols-3 lg:gap-12 text-xl leading-relaxed mb-12">
 
-                            <li className="mb-4 flex bg-lifereel dark rounded-lg">
-                                <div className="p-2 flex items-center text-5xl h-full bg-teal-500 border border-teal-600 rounded-lg -m-6">
-                                    <div className="w-36 h-full bg-cover bg-center rounded-lg border border-teal-600" style={{backgroundImage: "url('https://media.istockphoto.com/id/612716922/photo/senior-woman-laughing.jpg?b=1&s=170667a&w=0&k=20&c=Hc02t4SfhH5a8l7bLejsN2pwVZJNvh1hWNBDXJeCMBA=')"}}></div>
+                            <li className="mb-8 lg:mb-4 flex flex-wrap lg:flex-nowrap bg-lifereel dark rounded-lg">
+                                <div className="p-2 w-full lg:w-auto flex items-center text-5xl h-full bg-teal-500 border border-teal-600 rounded-lg -m-2 lg:-m-6">
+                                    <div className="min-h-[200px] w-full lg:w-36 h-full bg-cover bg-center rounded-lg border border-teal-600" style={{backgroundImage: "url('https://media.istockphoto.com/id/612716922/photo/senior-woman-laughing.jpg?b=1&s=170667a&w=0&k=20&c=Hc02t4SfhH5a8l7bLejsN2pwVZJNvh1hWNBDXJeCMBA=')"}}></div>
                                 </div>
-                                <div className="p-4 lg:p-12 py-8 text-medium flex items-center">
+                                <div className="p-8 lg:p-12 py-8 text-medium flex items-center">
                                     <div>We work with you and your family to record amazing <strong>Netflix-quality video memoirs</strong></div>
                                 </div>
                             </li>
 
-                            <li className="mb-4 flex bg-lifereel dark rounded-lg">
-                            <div className="p-2 flex items-center text-5xl h-full bg-violet-500 border border-violet-600 rounded-lg -m-6">
-                                    <div className="w-36 h-full bg-cover bg-center rounded-lg border-2 border-violet-600" style={{backgroundImage: "url('https://static.standard.co.uk/2022/08/02/10/marco-xu-ToUPBCO62Lw-unsplashjpg?width=1200&auto=webp&quality=75')"}}></div>
+                            <li className="mb-8 lg:mb-4 flex flex-wrap lg:flex-nowrap bg-lifereel dark rounded-lg">
+                                <div className="p-2 w-full lg:w-auto flex items-center text-5xl h-full bg-violet-500 border border-violet-600 rounded-lg -m-2 lg:-m-6">
+                                    <div className="min-h-[200px] w-full lg:w-36 h-full bg-cover bg-center rounded-lg border-2 border-violet-600" style={{backgroundImage: "url('https://static.standard.co.uk/2022/08/02/10/marco-xu-ToUPBCO62Lw-unsplashjpg?width=1200&auto=webp&quality=75')"}}></div>
                                 </div>
-                                <div className="p-12 py-8 text-medium flex items-center">
+                                <div className="p-8 lg:p-12 py-8 text-medium flex items-center">
                                     <div>Then we add your old photos, videos and music</div>
                                 </div>
                             </li>
 
-                            <li className="mb-4 flex bg-lifereel dark rounded-lg">
-                                <div className="p-2 flex items-center text-5xl h-full bg-amber-500 border border-amber-600 rounded-lg -m-6">
-                                    <div className="w-36 h-full bg-cover bg-center rounded-lg border-2 border-amber-600" style={{backgroundImage: "url('https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_42/2606536/181016-hugs-mn-1305.jpg')"}}></div>
+                            <li className="mb-8 lg:mb-4 flex flex-wrap lg:flex-nowrap bg-lifereel dark rounded-lg">
+                                <div className="p-2 w-full lg:w-auto flex items-center text-5xl h-full bg-amber-500 border border-amber-600 rounded-lg -m-2 lg:-m-6">
+                                    <div className="min-h-[200px] w-full lg:w-36 h-full bg-cover bg-center rounded-lg border-2 border-amber-600" style={{backgroundImage: "url('https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_42/2606536/181016-hugs-mn-1305.jpg')"}}></div>
                                 </div>
-                                <div className="p-12 py-8 text-medium flex items-center">
+                                <div className="p-8 lg:p-12 py-8 text-medium flex items-center">
                                     <div>When we're done, you'll have an unbelievable, unique film about your loved one</div>
                                 </div>
                             </li>

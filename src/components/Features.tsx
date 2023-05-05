@@ -4,6 +4,7 @@ import FeatureItem from "./FeatureItem";
 import interviewImage from "../../public/images/features/interview.jpeg";
 import homeMoviesImage from "../../public/images/features/homemovies.jpeg";
 import photosVideosImage from "../../public/images/features/photosvideos.gif";
+import HowDoesItWork from "./HowDoesItWork";
 
 const Features = () => {
     return (
@@ -27,16 +28,7 @@ const Features = () => {
 
                 </div>
 
-                <div>
-                    <h1>So how does it work?</h1>
-                    <ul>
-                        <li>We send you a "welcome pack" - giving you all the details, a questionnaire and more</li>
-                        <li>We pick a date for the </li>
-                        <li></li>
-                        <li>We ask for you, scan your photos and some video too</li>
-                        <li>Delivery! We send you a private video link that you can share with your family, friends and more</li>
-                    </ul>
-                </div>
+                <HowDoesItWork />
 
                 <div className="mx-auto text-center pb-12 lg:pb-4">
                     <Button />
