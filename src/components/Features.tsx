@@ -19,7 +19,7 @@ const Features = () => {
                 </div>
                 
             
-                <div className="w-full lg:flex mb-14">
+                <div className="w-full sm:flex sm:flex-wrap lg:flex-nowrap mb-14">
 
                     <FeatureItem title="The Interview" description="This is a little bit of lorem ipsum text here" imageUrl={interviewImage} icon="🎙️" extraClasses="bg-lifereel lg:hover:mt-0" />
                     <FeatureItem title="Photos" description="This is a little bit of lorem ipsum text here" imageUrl={homeMoviesImage} icon="📷" extraClasses="bg-dark-cream lg:mt-14 lg:hover:mt-0" />

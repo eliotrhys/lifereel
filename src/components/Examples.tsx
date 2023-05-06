@@ -8,7 +8,7 @@ const Examples = () => {
             <svg className="-mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#095256" fillOpacity="1" d="M0,32L20,58.7C40,85,80,139,120,170.7C160,203,200,213,240,192C280,171,320,117,360,106.7C400,96,440,128,480,165.3C520,203,560,245,600,229.3C640,213,680,139,720,133.3C760,128,800,192,840,229.3C880,267,920,277,960,256C1000,235,1040,181,1080,160C1120,139,1160,149,1200,170.7C1240,192,1280,224,1320,229.3C1360,235,1400,213,1420,202.7L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
             
             <div className="bg-lifereel w-full px-4 lg:px-0 -mb-1">
-                <div className="container w-full lg:w-2/3 mx-auto">
+                <div className="container w-full mx-auto">
 
                     <h2 className="text-center text-4xl font-black mb-12 lg:mb-24 pt-12 lg:pt-0 leading-relaxed">Watch some <br/>✨ <span className="text-violet-400">magic moments</span> ✨<br/> from Lifereels</h2>
                 

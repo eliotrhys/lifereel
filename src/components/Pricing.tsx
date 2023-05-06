@@ -9,7 +9,7 @@ const Pricing = () => {
 
             <div className="bg-lifereel w-full">
 
-                <div className="container mx-auto w-full lg:w-2/3 px-4 lg:px-0">
+                <div className="container mx-auto w-full xl:w-2/3 px-4 lg:px-0">
 
                     <h2 className="text-center text-4xl font-black mb-12 lg:mb-24 pt-12 lg:pt-0">Pricing</h2>
                 

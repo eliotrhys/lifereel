@@ -13,7 +13,7 @@ interface FeatureItemProps
 const FeatureItem = (props: FeatureItemProps) => {
     return (
 
-        <div className={`w-full lg:w-1/4 mb-4 lg:m-4 lg:mb-0 h-fit border border-slate-900 ${props.extraClasses ? props.extraClasses : ""} rounded-lg duration-300 ease-in-out pb-8`}>
+        <div className={`w-full sm:w-2/4 xl:w-2/4 mb-4 lg:m-4 lg:mb-0 h-fit border border-slate-900 ${props.extraClasses ? props.extraClasses : ""} rounded-lg duration-300 ease-in-out pb-8`}>
             <div className="p-8">
                 <img src={props.imageUrl.src} alt="" className="rounded-lg border border-slate-900" />
             </div>

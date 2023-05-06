@@ -5,11 +5,11 @@ const About = () => {
     return (
         <section className="relative" id="about">
 
-            <div className="bg-dark-cream px-4 lg:px-0">
+            <div className="bg-dark-cream px-4 xl:px-0">
 
                 <div className="container mx-auto">
                     
-                    <div className="grid lg:grid-cols-2 gap-14">
+                    <div className="grid xl:grid-cols-2 gap-14">
 
                         <div className="flex items-center">
                             <div>
