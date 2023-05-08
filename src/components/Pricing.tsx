@@ -9,11 +9,11 @@ const Pricing = () => {
 
             <div className="bg-lifereel w-full">
 
-                <div className="container mx-auto w-full xl:w-2/3 px-4 lg:px-0">
+                <div className="container mx-auto lg:w-full xl:w-3/4 px-4 lg:px-0">
 
                     <h2 className="text-center text-4xl font-black mb-12 lg:mb-24 pt-12 lg:pt-0">Pricing</h2>
                 
-                    <div className="grid lg:grid-cols-3 gap-4 mb-12">
+                    <div className="grid lg:grid-cols-3 gap-8 mb-12">
 
                         <PricingItem title="Basic" icon="👍" description="Film a Lifereel for your loved one, and create a family heirloom that will last forever" price={600} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion"]} />
                         <PricingItem title="Classic" icon="📽️" description="A full Lifereel, with a short edit and something something else and something else" price={2000} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion", "Edited"]} />

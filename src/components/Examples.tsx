@@ -12,7 +12,7 @@ const Examples = () => {
 
                     <h2 className="text-center text-4xl font-black mb-12 lg:mb-24 pt-12 lg:pt-0 leading-relaxed">Watch some <br/>✨ <span className="text-violet-400">magic moments</span> ✨<br/> from Lifereels</h2>
                 
-                    <div className="grid lg:grid-cols-2 lg:gap-14 mb-14">
+                    <div className="grid lg:grid-cols-2 gap-4 xl:gap-14 mb-14">
 
                         <ExampleItem />
                         <ExampleItem />

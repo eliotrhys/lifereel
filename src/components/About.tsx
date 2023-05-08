@@ -20,10 +20,10 @@ const About = () => {
                         <div className="">
 
                             <h2 className="text-4xl">👋</h2>
-                            <h2 className="text-4xl font-black mb-4">Hi, I'm Oscar</h2>
+                            <h2 className="text-4xl font-black mb-4">Hi, I&apos;m Oscar</h2>
 
-                            <div className="mb-4 text-lg font-medium leading-relaxed">Let's work together on a Lifereel for your loved ones!</div>
-                            <div className="mb-4 text-lg font-medium leading-relaxed">I'm a filmmaker with over 15 years experience. I work on every single Lifereel - if you choose to make one we'll be working together to make something truly unforgettable for you and your family!</div>
+                            <div className="mb-4 text-lg font-medium leading-relaxed">Let&apos;s work together on a Lifereel for your loved ones!</div>
+                            <div className="mb-4 text-lg font-medium leading-relaxed">I&apos;m a filmmaker with over 15 years experience. I work on every single Lifereel - if you choose to make one we&apos;ll be working together to make something truly unforgettable for you and your family!</div>
 
                             <ul className="mb-14 grid lg:grid-cols-2 gap-4">
                                 <li className="text-lg font-medium leading-relaxed border border-violet-900 bg-violet-100 rounded-lg flex items-center min-w-[80px]">
@@ -40,7 +40,7 @@ const About = () => {
                                 </li>
                                 <li className="text-lg font-medium leading-relaxed border border-sky-900 bg-sky-100 rounded-lg flex items-center min-w-[80px]">
                                     <span className="p-4 border-r border-sky-900 flex items-center text-5xl h-full">🇬🇧</span>
-                                    <span className="p-4 text-sky-900">Worked with some of the UK's biggest brands</span>
+                                    <span className="p-4 text-sky-900">Worked with some of the UK&apos;s biggest brands</span>
                                 </li>
                             </ul>
 

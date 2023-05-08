@@ -46,7 +46,7 @@ const Navbar = (props: NavbarProps) => {
     return (
         <section className="w-full py-4 px-4 lg:px-0 nav-lifereel sticky top-0 z-20 bg-lifereel">
 
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="px-4 mx-auto flex justify-between items-center">
             
                 <div>
                     <img src={isScrolled ? logo.src : lightLogo.src} className="h-8" alt="" />
@@ -54,10 +54,9 @@ const Navbar = (props: NavbarProps) => {
 
                 <div className="items-center text-md font-medium hidden lg:flex">
                     <NavbarItem title="Home" link="#" />
-                    <NavbarItem title="What are Lifereels?" link="#features" />
+                    <NavbarItem title="About" link="#features" />
                     <NavbarItem title="Features" link="#features" />
                     <NavbarItem title="Examples" link="#examples" />
-                    <NavbarItem title="About me" link="#about" />
                     <NavbarItem title="FAQ" link="#faq" />
                     <NavbarItem title="Pricing" link="#pricing" />
                     <NavbarItem title="Contact us" link="#contact" extraClasses="bg-rose-500 hover:bg-rose-700 px-8 font-medium text-rose-100 !mr-0" />

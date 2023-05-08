@@ -11,7 +11,9 @@ const PricingItem = (props: PricingItemProps) => {
 
     return (
 
-        <div className={`border rounded-lg ${props.isPremium ? "bg-slate-800 text-cream border-slate-500" : "bg-dark-cream text-slate-800 border-slate-800"}`}>
+        <div className={`border rounded-lg relative ${props.isPremium ? "bg-slate-800 text-cream border-slate-500" : "bg-dark-cream text-slate-800 border-slate-800"}`}>
+
+            {props.isPremium && <div className="py-2 px-8 rounded-lg bg-yellow-500 border border-black text-black font-medium absolute left-1/2 transform -translate-x-1/2 -mt-5 z-10 text-center whitespace-nowrap">Most Popular</div> }
 
             <div className="p-8">
                 <img src="https://www.thebalancemoney.com/thmb/tajr0Tg5KBG9g6tENuj8c18R5q8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/157859688-56b084993df78cf772cf6dec.jpg" className={`rounded-lg border ${props.isPremium ? "border-slate-500" : "border-slate-800"}`} alt="" />

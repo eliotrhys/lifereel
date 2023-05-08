@@ -11,7 +11,6 @@ import Pricing from '@/components/Pricing'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import Examples from '@/components/Examples'
-import HowItWorks from '@/components/HowItWorks'
 import LifereelAcademy from '@/components/LifereelAcademy'
 import { useState } from 'react'
 import SideMenu from '@/components/SideMenu'
@@ -33,7 +32,6 @@ export default function Home() {
       <Jumbotron />
       <Features />
       <Examples />
-      {/* <HowItWorks /> */}
       <About />
       <FAQ />
       <Pricing />

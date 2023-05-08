@@ -25,7 +25,7 @@ const FAQ = () => {
                             </div>
 
                             <div className="mb-8 lg:mb-4 col-span-2">
-                                <label htmlFor="" className="block mb-2 font-medium">Tell us a little about who you'd like to make a Lifereel for</label>
+                                <label htmlFor="" className="block mb-2 font-medium">Tell us a little about who you&apos;d like to make a Lifereel for</label>
                                 <textarea placeholder="Type here..." rows={8} className="w-full p-4 rounded-lg border border-slate-900"></textarea>
                             </div>
                             
@@ -33,7 +33,7 @@ const FAQ = () => {
                     </form>
 
                     <div className="text-center pb-12 lg:pb-4">
-                        <button type="submit" className="button-lifereel w-full lg:w-auto p-4 px-8 rounded-lg inline-block font-medium text-lg duration-300 ease-in-out">Let's get started!</button>
+                        <button type="submit" className="button-lifereel w-full lg:w-auto p-4 px-8 rounded-lg inline-block font-medium text-lg duration-300 ease-in-out">Let&apos;s get started!</button>
                     </div>
 
                 </div>

@@ -15,10 +15,11 @@ export default function RootLayout({ children } : { children: React.ReactNode })
 {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <title>Lifereel</title>
-        <link rel="stylesheet" href="https://use.typekit.net/dea1mbv.css"></link>
-        {/* <link rel="stylesheet" href="https://use.typekit.net/wtd2uom.css"></link> */}
+      </head>
+        {/* <title>Lifereel</title>
+        <link rel="stylesheet" href="https://use.typekit.net/dea1mbv.css"></link> */}
         {/* <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png"></link>
         <meta name="theme-color" content="#fff" />
@@ -29,8 +30,7 @@ export default function RootLayout({ children } : { children: React.ReactNode })
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/images/triviamoji_og.jpg" />
         <meta name="keywords" content="Triviamoji, Emoji trivia, Emoji guessing game, Emoji trivia challenge, Guess the emoji game, Emoji quiz challenge, Emoji charades game, Emoji puzzle game, Emoji word game, Emoji brain teaser, Emoji guessing competition, Emoji riddle game, Emoji, Guess the emoji" /> */}
-      </Head>
-      <body className={inter.className}>
+      <body>
         {children}
       </body>
     </html>

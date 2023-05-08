@@ -5,13 +5,13 @@ const HowDoesItWork = () => {
         <section className="mb-12">
             <h2 className="text-4xl font-black mb-12 pt-12 text-center">So how does it work?</h2>
 
-            <ul className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <li>
                     <div className="flex items-center mb-8">
                         <div className="mr-4">
                             <h4 className="bg-green-500 rounded-full p-4 w-16 h-16 flex items-center justify-center font-black text-2xl">1</h4>
                         </div>
-                        <div className="text-lg font-medium leading-relaxed">We send you a "welcome pack" - giving you all the details, a questionnaire and more</div>
+                        <div className="text-lg font-medium leading-relaxed">We send you a &quot;welcome pack&quot; - giving you all the details, a questionnaire and more</div>
                     </div>
                 </li>
                 <li>
