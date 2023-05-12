@@ -9,9 +9,9 @@ const LifereelAcademy = () => {
 
             <div className="container mx-auto lg:w-2/3 bg-slate-800 rounded-lg">
                 <div className="grid xl:grid-cols-2">
-                    <div className="flex items-center p-6">
-                        <div className="lg:p-4">
-                            <img src="https://file-uploads.teachablecdn.com/9596f47ca8814b95a36abb02efedcae1/905ca9fea5d04ba0b01fc322f743089b" className="w-full rounded-lg" alt="" />
+                    <div className="flex items-center p-6 w-full h-full">
+                        <div className="lg:p-6 w-full">
+                            <iframe className="aspect-video rounded-lg mx-auto w-full" src="https://www.youtube.com/embed/EEU2F7c_kDk" title="Lifereel Academy Trailer" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className="p-10 xl:p-6 text-cream">

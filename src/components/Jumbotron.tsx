@@ -14,6 +14,31 @@ import scrap from "../../public/images/shapes/scrap.png";
 
 
 const Jumbotron = () => {
+
+
+    const variants = {
+        hidden: { opacity: 0 },
+        showing: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.125
+            }
+        }
+    }
+
+    const animationItem = {
+        hidden: {
+            opacity: 0,
+        },
+        showing: {
+            opacity: 1,
+            transition: {
+                duration: 0.3
+            }
+        }
+    }
+
+
     return (
         <section>
             <div className="">
@@ -33,14 +58,14 @@ const Jumbotron = () => {
                         <div className="col-span-12 lg:col-span-6">
                             <div className="mb-4 px-4 lg:px-0 w-full mx-auto flex justify-center items-end relative">
                                 <div className="">
-                                    <iframe width="560" height="315" className="aspect-video rounded-lg mx-auto w-full lg:w-auto lg:min-w-[560px] lg:min-h-[315px]" src="https://www.youtube.com/embed/F9Pak63kaPE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                    <iframe className="aspect-video rounded-lg mx-auto w-full lg:w-auto lg:min-w-[560px] lg:min-h-[315px]" src="https://www.youtube.com/embed/F9Pak63kaPE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                                 </div>
                             </div>
 
                             <div className="mb-8">
                                 <div className="mb-4">
                                     <div className="relative">
-                                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-slate-900 whitespace-nowrap">We Make Lifereels<span className="text-rose-500 ml-1">.</span></h1>
+                                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xxl:text-8xl font-black text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-slate-900 whitespace-nowrap">We Make Lifereels<span className="text-rose-500 ml-1">.</span></h1>
                                         <div>
                                             <img src={scrap.src} alt="paper scrap" className="w-full" />
                                         </div>
@@ -73,35 +98,41 @@ const Jumbotron = () => {
 
                     <div className="container mx-auto px-4 lg:px-0 py-6">
 
-                        <ul className="lg:grid md:grid-cols-12 lg:gap-12 text-xl leading-relaxed mb-12">
+                        <motion.ul 
+                            className="lg:grid md:grid-cols-12 lg:gap-12 text-xl leading-relaxed mb-12"
+                            initial="hidden"
+                            variants={variants}
+                            whileInView="showing"
+                            viewport={{ once: true }}
+                        >
 
-                            <li className="mb-8 md:col-span-6 xl:col-span-4 lg:mb-4 flex flex-wrap lg:flex-nowrap bg-lifereel dark rounded-lg">
+                            <motion.li className="mb-8 md:col-span-6 xl:col-span-4 lg:mb-4 flex flex-wrap lg:flex-nowrap bg-lifereel dark rounded-lg" variants={animationItem}>
                                 <div className="min-h-[200px] p-2 w-full lg:w-auto flex items-center text-5xl h-full bg-teal-500 border border-teal-600 rounded-lg -m-2 lg:-m-6">
                                     <div className="w-full lg:w-36 h-full bg-cover bg-center rounded-lg border border-teal-600" style={{backgroundImage: "url('https://media.istockphoto.com/id/612716922/photo/senior-woman-laughing.jpg?b=1&s=170667a&w=0&k=20&c=Hc02t4SfhH5a8l7bLejsN2pwVZJNvh1hWNBDXJeCMBA=')"}}></div>
                                 </div>
                                 <div className="p-8 lg:p-12 py-8 text-medium flex items-center">
                                     <div>We work with you and your family to record amazing <strong>Netflix-quality video memoirs</strong></div>
                                 </div>
-                            </li>
+                            </motion.li>
 
-                            <li className="mb-8 md:col-span-6 xl:col-span-4 lg:mb-4 flex flex-wrap lg:flex-nowrap bg-lifereel dark rounded-lg">
+                            <motion.li className="mb-8 md:col-span-6 xl:col-span-4 lg:mb-4 flex flex-wrap lg:flex-nowrap bg-lifereel dark rounded-lg" variants={animationItem}>
                                 <div className="min-h-[200px] p-2 w-full lg:w-auto flex items-center text-5xl h-full bg-violet-500 border border-violet-600 rounded-lg -m-2 lg:-m-6">
                                     <div className="w-full lg:w-36 h-full bg-cover bg-center rounded-lg border-2 border-violet-600" style={{backgroundImage: "url('https://static.standard.co.uk/2022/08/02/10/marco-xu-ToUPBCO62Lw-unsplashjpg?width=1200&auto=webp&quality=75')"}}></div>
                                 </div>
                                 <div className="p-8 lg:p-12 py-8 text-medium flex items-center">
                                     <div>Then we add your old photos, videos and music</div>
                                 </div>
-                            </li>
+                            </motion.li>
 
-                            <li className="mb-8 md:col-start-5 md:col-span-6 xl:col-span-4 lg:mb-4 flex flex-wrap lg:flex-nowrap bg-lifereel dark rounded-lg">
+                            <motion.li className="mb-8 md:col-start-5 md:col-span-6 xl:col-span-4 lg:mb-4 flex flex-wrap lg:flex-nowrap bg-lifereel dark rounded-lg" variants={animationItem}>
                                 <div className="min-h-[200px] p-2 w-full lg:w-auto flex items-center text-5xl h-full bg-amber-500 border border-amber-600 rounded-lg -m-2 lg:-m-6">
                                     <div className="w-full lg:w-36 h-full bg-cover bg-center rounded-lg border-2 border-amber-600" style={{backgroundImage: "url('https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_42/2606536/181016-hugs-mn-1305.jpg')"}}></div>
                                 </div>
                                 <div className="p-8 lg:p-12 py-8 text-medium flex items-center">
                                     <div>When we&apos;re done, you&apos;ll have an unbelievable, unique film about your loved one</div>
                                 </div>
-                            </li>
-                        </ul>
+                            </motion.li>
+                        </motion.ul>
 
                         <div className="text-center">
                             <Button />

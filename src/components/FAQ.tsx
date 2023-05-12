@@ -15,7 +15,7 @@ const FAQ = () => {
                     <FAQItem question="bing bong bing bong?" answer="bing bing bing bing bing bing bing bing bbobgobg obg obamna SODA" />
                     <FAQItem question="bing bong bing bong?" answer="bing bing bing bing bing bing bing bing bbobgobg obg obamna SODA" />
                     <FAQItem question="bing bong bing bong?" answer="bing bing bing bing bing bing bing bing bbobgobg obg obamna SODA" />
-                    <FAQItem question="bing bong bing bong?" answer="bing bing bing bing bing bing bing bing bbobgobg obg obamna SODA" />
+                    <FAQItem question="What is Lifereel Academy?" answer="If you'd rather take a shot at making your own Lifereel, I say go for it!" />
                 </div>
             </div>
 
