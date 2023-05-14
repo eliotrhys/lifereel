@@ -15,9 +15,9 @@ const Pricing = () => {
                 
                     <div className="grid lg:grid-cols-3 gap-8 mb-12">
 
-                        <PricingItem title="Basic" icon="👍" description="Film a Lifereel for your loved one, and create a family heirloom that will last forever" price={600} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion"]} />
-                        <PricingItem title="Classic" icon="📽️" description="A full Lifereel, with a short edit and something something else and something else" price={2000} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion", "Edited"]} />
-                        <PricingItem title="Premium" icon="🤩" description="Our Premium solution, including scanned photos, videos and more and something else" price={6000} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion", "Edited", "Something"]} isPremium={true} />
+                        <PricingItem title="Basic Interview" icon="👍" description="Netflix quality 2-camera interview with your loved one" price={600} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion"]} />
+                        <PricingItem title="Lifereel" icon="📽️" description="A full Lifereel, with a short edit and something something else and something else" price={3995} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion", "Edited"]} />
+                        <PricingItem title="Premium Lifereel" icon="🤩" description="Our Premium solution, including scanned photos, videos and more and something else" price={5995} features={["Full Netflix-Quality Film", "Photo Scanning", "Video Conversion", "Edited", "Something"]} isPremium={true} />
 
                     </div>
 

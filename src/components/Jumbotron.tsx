@@ -111,7 +111,7 @@ const Jumbotron = () => {
                                     <div className="w-full lg:w-36 h-full bg-cover bg-center rounded-lg border border-teal-600" style={{backgroundImage: "url('https://media.istockphoto.com/id/612716922/photo/senior-woman-laughing.jpg?b=1&s=170667a&w=0&k=20&c=Hc02t4SfhH5a8l7bLejsN2pwVZJNvh1hWNBDXJeCMBA=')"}}></div>
                                 </div>
                                 <div className="p-8 lg:p-12 py-8 text-medium flex items-center">
-                                    <div>We work with you and your family to record amazing <strong>Netflix-quality video memoirs</strong></div>
+                                    <div>We work with you to record an amazing <strong>Netflix-quality</strong> video interview with your loved one</div>
                                 </div>
                             </motion.li>
 
@@ -120,7 +120,7 @@ const Jumbotron = () => {
                                     <div className="w-full lg:w-36 h-full bg-cover bg-center rounded-lg border-2 border-violet-600" style={{backgroundImage: "url('https://static.standard.co.uk/2022/08/02/10/marco-xu-ToUPBCO62Lw-unsplashjpg?width=1200&auto=webp&quality=75')"}}></div>
                                 </div>
                                 <div className="p-8 lg:p-12 py-8 text-medium flex items-center">
-                                    <div>Then we add your old photos, videos and music</div>
+                                    <div>Then we scan your family photographs, and digitise your home movies</div>
                                 </div>
                             </motion.li>
 
@@ -129,7 +129,7 @@ const Jumbotron = () => {
                                     <div className="w-full lg:w-36 h-full bg-cover bg-center rounded-lg border-2 border-amber-600" style={{backgroundImage: "url('https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_42/2606536/181016-hugs-mn-1305.jpg')"}}></div>
                                 </div>
                                 <div className="p-8 lg:p-12 py-8 text-medium flex items-center">
-                                    <div>When we&apos;re done, you&apos;ll have an unbelievable, unique film about your loved one</div>
+                                    <div>Our Storytellers bring it all together to create a beautiful, unique film about the life of your loved one!</div>
                                 </div>
                             </motion.li>
                         </motion.ul>
@@ -158,15 +158,19 @@ const Jumbotron = () => {
                             </div>
                             <div className="flex items-center">
                                 <div>
-                                    <h4 className="text-2xl font-black mb-8 text-cream">Lifereels are the new memoirs</h4>
+                                    <h4 className="text-2xl font-black mb-8 text-cream">Don&apos;t write a memoir. Record a lifereel!</h4>
 
-                                    <p className="text-medium text-cream text-lg leading-relaxed mb-6">Don&apos;t write a memoir. <strong>Record a Lifereel.</strong></p>
+                                    <p className="text-medium text-cream text-lg leading-relaxed mb-6">We always talk about writing down the stories of those closest to us, but most of us never get around to it.</p>
 
-                                    <p className="text-medium text-cream text-lg leading-relaxed mb-6">Everybody has a story worth telling. But less than 1% of all human beings write a memoir! That means 99% of all unbelievable, heartbreaking, or hilarious stories disappear forever!</p>
+                                    <p className="text-medium text-cream text-lg leading-relaxed mb-6">In just a few hours, we can immortalise the stories of a loved one - by interviewing them on camera.</p>
 
-                                    <p className="text-medium text-cream text-lg leading-relaxed mb-6">Lifereels are here to change that.</p>
+                                    <p className="text-medium text-cream text-lg leading-relaxed mb-6">With the help of your family photographs and home movies, we can create a timeless piece of personal history.</p>
 
-                                    <p className="text-medium text-cream text-lg leading-relaxed mb-6">In just one day, you can record a Lifereel that will keep your, or your loved one&apos;s, stories alive forever - so one day your great-great-great grandchildren can meet you!</p>
+                                    <p className="text-medium text-cream text-lg leading-relaxed mb-6">A lifereel can be watched on special occasions, and passed down for generations to come!</p>
+
+                                    <p className="text-medium text-cream text-lg leading-relaxed mb-6">Everybody has a life story worth telling - you don&apos;t need to have climbed Mount Everest!</p>
+
+                                    <p className="text-medium text-cream text-lg leading-relaxed mb-6">A lifereel is a new kind of memoir, and we <strong>guarantee that it will become one of your most treasured possessions.</strong></p>
                                 </div>
                             </div>
                         </div>
