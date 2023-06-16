@@ -5,8 +5,11 @@ const FAQ = () => {
             <div className="container mx-auto px-4 lg:px-0">
                 
                 <div>
-                    <h2 className="text-center text-4xl font-black mb-12 lg:mb-24 pt-12 lg:pt-0">Contact us</h2>
+                    <h2 className="text-center text-4xl font-black mb-12 pt-12 lg:pt-0">Contact us by emailing</h2>
 
+                    <a href="mailto:hello@lifereel.co" className="text-center text-7xl font-black mb-12 lg:mb-24 pt-12 lg:pt-0 hover:pointer"><h2>hello@lifereel.co</h2></a>
+
+{/* 
                     <form className="w-full lg:w-2/4 mx-auto">
                         <div className="lg:grid lg:grid-cols-2 gap-4">
                             <div className="mb-8 lg:mb-4">
@@ -34,7 +37,7 @@ const FAQ = () => {
 
                     <div className="text-center pb-12 lg:pb-4">
                         <button type="submit" className="button-lifereel w-full lg:w-auto p-4 px-8 rounded-lg inline-block font-medium text-lg duration-300 ease-in-out">Let&apos;s get started!</button>
-                    </div>
+                    </div> */}
 
                 </div>
 
