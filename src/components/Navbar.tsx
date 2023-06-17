@@ -54,7 +54,7 @@ const Navbar = (props: NavbarProps) => {
 
                 <div className="items-center text-md font-medium hidden lg:flex">
                     <NavbarItem title="Home" link="#" />
-                    <NavbarItem title="About" link="#features" />
+                    <NavbarItem title="About" link="#about" />
                     <NavbarItem title="Features" link="#features" />
                     <NavbarItem title="Examples" link="#examples" />
                     <NavbarItem title="FAQ" link="#faq" />

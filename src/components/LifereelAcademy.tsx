@@ -28,7 +28,10 @@ const LifereelAcademy = () => {
                             <p className="text-cream text-lg font-medium mb-6">In just a few short weeks we can help you make a <strong>Netflix-quality</strong> Lifereel for your loved one!</p>
                         </div>
 
-                        <Button />
+
+                        <div className="">
+                            <a href="https://lifereel.teachable.com/" target="_blank" className="button-lifereel w-full lg:w-auto p-4 px-12 rounded-lg inline-block font-medium text-lg duration-300 ease-in-out text-center">Learn more!</a>
+                        </div>
                     </div>
                 </div>
             </div>

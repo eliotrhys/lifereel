@@ -1,6 +1,7 @@
 interface PricingItemProps {
     title: string;
     icon: string;
+    image: string;
     description: string;
     price: number;
     features: string[];
@@ -13,14 +14,14 @@ const PricingItem = (props: PricingItemProps) => {
 
         <div className={`border rounded-lg relative ${props.isPremium ? "bg-slate-800 text-cream border-slate-500" : "bg-dark-cream text-slate-800 border-slate-800"}`}>
 
-            {props.isPremium && <div className="py-2 px-8 rounded-lg bg-yellow-500 border border-black text-black font-medium absolute left-1/2 transform -translate-x-1/2 -mt-5 z-10 text-center whitespace-nowrap">Most Popular</div> }
+            {props.isPremium && <div className="py-2 px-8 rounded-lg bg-yellow-500 border border-black text-black font-medium absolute left-1/2 transform -translate-x-1/2 -mt-5 z-10 text-center whitespace-nowrap">Recommended</div> }
 
             <div className="p-8">
-                <img src="https://www.thebalancemoney.com/thmb/tajr0Tg5KBG9g6tENuj8c18R5q8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/157859688-56b084993df78cf772cf6dec.jpg" className={`rounded-lg border ${props.isPremium ? "border-slate-500" : "border-slate-800"}`} alt="" />
+                <img src={props.image} className={`rounded-lg border ${props.isPremium ? "border-slate-500" : "border-slate-800"}`} alt="" />
             </div>
 
             <div className="">
-                <div className="px-8 mb-8">
+                <div className="px-8 mb-8 lg:min-h-[300px] xl:min-h-[260px]">
                     <div className="mb-6">
                         <div className="mb-6">
                             <div className="text-3xl mr-4">{props.icon}</div>

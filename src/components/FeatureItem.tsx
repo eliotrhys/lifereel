@@ -17,7 +17,7 @@ const FeatureItem = (props: FeatureItemProps) => {
             <div className={`w-full h-fit border border-slate-900 ${props.extraClasses ? props.extraClasses : ""} rounded-lg duration-300 ease-in-out pb-8`}>
 
                 <div className="p-8">
-                    <img src={props.imageUrl.src} alt="" className="rounded-lg border border-slate-900" />
+                    <img src={props.imageUrl.src} alt="" className="rounded-lg border border-slate-900 w-full" />
                 </div>
 
                 <div className="px-8">

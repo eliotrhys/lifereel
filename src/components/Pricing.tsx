@@ -1,5 +1,8 @@
 import Button from "./Button";
 import PricingItem from "./PricingItem";
+import tierOne from "../../public/images/pricing/tier1.png";
+import tierTwo from "../../public/images/pricing/tier2.png";
+import tierThree from "../../public/images/pricing/tier3.png";
 
 const Pricing = () => {
     return (
@@ -15,9 +18,9 @@ const Pricing = () => {
                 
                     <div className="grid lg:grid-cols-3 gap-8 mb-12">
 
-                        <PricingItem title="Basic Interview" icon="👍" description="A high quality interview, with professional colour grading and audio post-processing" price={600} features={["Netflix quality 2-camera interview", "Assistance in drawing up interview questions to ensure a comprehensive overview of your loved ones life story", "Hard drive containing the raw, unedited interview footage"]} />
-                        <PricingItem title="Basic Lifereel" icon="📽️" description="Our full lifereel service, featuring your photos, home movies, background music. A timeless piece of family history to be treasured forever" price={3995} features={["Netflix quality 2-camera interview", "Photo scanning, retouching and restoration", "Home movie Digitisation", "3 rounds of revisions", "Beautiful shareable video page to view your lifereel (& digital download)", "Hard drive containing all digitised photographs and home movies, as well as the raw, unedited interview footage"]} />
-                        <PricingItem title="Premium Lifereel" icon="🤩" description="A truly bespoke solution, providing a 30+ minute lifereel, comprehensive scanning services, additional B-roll footage and unlimited revisions" price={5995} features={["Netflix quality 2-camera interview", "Comprehensive scan of your entire photograph collection", "Home movie digitisation", "Additional footage capture (B-Roll) of your loved one, plus additional interviews (if needed)", "Unlimited revisions", "Shareable video page to view your lifereel (& digital download)", "2x Shareable highlight reels to post on social media or send to friends", "DVD in premium wooden case", "Hard drive containing all digitised photographs and home movies, as well as the raw, unedited interview footage"]} isPremium={true} />
+                        <PricingItem title="Basic Interview" image={tierOne.src} icon="👍" description="A simple, beautifully composed interview in your loved ones home" price={795} features={["Netflix quality 2-camera interview", "Assistance in drawing up interview questions to ensure a comprehensive overview of your loved ones life story", "Hard drive containing the raw, unedited interview footage"]} />
+                        <PricingItem title="Basic Lifereel" image={tierTwo.src} icon="📽️" description="Our full lifereel service, featuring a beautiful 30-minute film, overlayed with photographs, home movies & music" price={3995} features={["Netflix quality 2-camera interview", "Photo scanning, retouching and restoration", "Home movie Digitisation", "3 rounds of revisions", "Beautiful shareable video page to view your lifereel (& digital download)", "Hard drive containing all digitised photographs and home movies, as well as the raw, unedited interview footage"]} />
+                        <PricingItem title="Premium Lifereel" image={tierThree.src} icon="🤩" description="Our premium lifereel solution, including a beautiful 30+ minute film, additional filming, hard copies in a premium wooden case, and more!" price={5995} features={["Netflix quality 2-camera interview", "Comprehensive scan of your entire photograph collection", "Home movie digitisation", "Additional footage capture (B-Roll) of your loved one, plus additional interviews (if needed)", "Unlimited revisions", "Shareable video page to view your lifereel (& digital download)", "2x Shareable highlight reels to post on social media or send to friends", "DVD in premium wooden case", "Hard drive containing all digitised photographs and home movies, as well as the raw, unedited interview footage"]} isPremium={true} />
 
                     </div>
 
