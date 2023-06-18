@@ -11,7 +11,7 @@ const HowDoesItWork = () => {
                         <div className="mr-4">
                             <h4 className="bg-green-500 rounded-full p-4 w-16 h-16 flex items-center justify-center font-black text-2xl">1</h4>
                         </div>
-                        <div className="text-lg font-medium leading-relaxed">One of our team will set up a meeting with you and your loved one - either online or in person - to discuss your lifereel and the next steps forward</div>
+                        <div className="text-lg font-medium leading-relaxed">One of our team will set up a meeting with you and your loved one - either online or in person - to discuss your lifereel and the next steps forward.</div>
                     </div>
                 </li>
                 <li>

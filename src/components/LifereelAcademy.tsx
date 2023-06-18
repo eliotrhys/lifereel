@@ -21,11 +21,11 @@ const LifereelAcademy = () => {
                             </div>
                             <h4 className="text-4xl font-black mb-8 text-cream">Fancy making one yourself?</h4>
 
-                            <p className="text-cream text-lg font-medium mb-6">We created <span>Lifereel Academy</span> to help people make their own Lifereels.</p>
+                            <p className="text-cream text-lg font-medium mb-6">We created <span>Lifereel Academy</span> to help people make their own lifereels.</p>
 
                             <p className="text-cream text-lg font-medium mb-6">Our course teaches you everything about filming, lighting, editing and scanning old photos and movies.</p>
 
-                            <p className="text-cream text-lg font-medium mb-6">In just a few short weeks we can help you make a <strong>Netflix-quality</strong> Lifereel for your loved one!</p>
+                            <p className="text-cream text-lg font-medium mb-6">In just a few short weeks we can help you make a <strong>Netflix-quality</strong> lifereel for your loved one!</p>
                         </div>
 
 

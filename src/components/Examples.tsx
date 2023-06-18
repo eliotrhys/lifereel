@@ -15,7 +15,7 @@ const Examples = () => {
                     <div className="grid lg:grid-cols-3 gap-4 xl:gap-14 mb-14">
 
                         <ExampleItem videoUrl="https://player.vimeo.com/video/826710648?h=a204c14e38" synopsis="Frank discusses his relationship with his parents, and his own father&apos;s rocky upbringing..." />
-                        <ExampleItem videoUrl="https://player.vimeo.com/video/826710913?h=6b3e0dc004" synopsis="Verena talks about her first jobs as a teenager, and exploring her wild side as a young girl South Shields!" />
+                        <ExampleItem videoUrl="https://player.vimeo.com/video/826710913?h=6b3e0dc004" synopsis="Verena talks about her first jobs as a teenager, and exploring her wild side as a young girl in South Shields!" />
                         <ExampleItem videoUrl="https://player.vimeo.com/video/826710799?h=a6348a0e16" synopsis="Eileen describes the unconventional way her husband Hector courted her - take notes, gentlemen!" />
 
                     </div>

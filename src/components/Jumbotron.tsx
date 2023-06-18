@@ -8,6 +8,7 @@ import Button from "./Button";
 import asSeenOnYouTube from "../../public/images/as-seen-on/youtube.png";
 import underline from "../../public/images/shapes/underline.svg";
 import photos from "../../public/images/photos/photos.png";
+import threePhotos from "../../public/images/jumbotron/three_photos.png";
 import videos from "../../public/images/photos/videos.png";
 import scrap from "../../public/images/shapes/scrap.png";
 import interviewImage from "../../public/images/features/interview.jpeg";
@@ -55,7 +56,7 @@ const Jumbotron = () => {
                                 animate={{ x: [-800, 0]} } 
                                 transition={{ duration: 0.4 }}
                             >
-                                <img src={photos.src} alt="" className="w-full" />
+                                <img src={threePhotos.src} alt="" className="w-full" />
                             </motion.div>
                         </div>
 
@@ -154,7 +155,7 @@ const Jumbotron = () => {
                 <div className="as-seen-on py-8 px-4 lg:px-0 mx-auto bg-slate-800 text">
                     <div className="container mx-auto">
 
-                        <h4 className="text-center text-4xl font-black mb-12 lg:mb-24 pt-12 lg:pt-0 text-cream">What are Lifereels?</h4>
+                        <h4 className="text-center text-4xl font-black mb-12 lg:mb-24 pt-12 lg:pt-0 text-cream">What are lifereels?</h4>
 
                         <div className="grid lg:grid-cols-2 gap-14 mb-12">
                             <div>
