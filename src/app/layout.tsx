@@ -3,6 +3,7 @@
 import Head from 'next/head'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import favicon from "./favicon.png";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children } : { children: React.ReactNode })
     <html lang="en">
       <head>
         <title>Lifereel</title>
+        <link rel="icon" type="image/png" href={favicon.src}></link>
       </head>
         {/* <title>Lifereel</title>
         <link rel="stylesheet" href="https://use.typekit.net/dea1mbv.css"></link> */}
