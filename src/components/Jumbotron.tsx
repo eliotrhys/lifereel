@@ -63,7 +63,7 @@ const Jumbotron = () => {
                         <div className="col-span-12 lg:col-span-6">
                             <div className="mb-4 px-4 lg:px-0 w-full mx-auto flex justify-center items-end relative">
                                 <div className="w-full">
-                                    <iframe className="aspect-video rounded-lg mx-auto w-full lg:w-auto lg:min-w-[560px] lg:min-h-[315px]" src="https://www.youtube.com/embed/C2jbB7eavLU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                    <iframe className="aspect-video rounded-lg mx-auto w-full lg:w-auto lg:min-w-[560px] lg:min-h-[315px]" src="https://www.youtube.com/embed/TINg7AcMYDU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                                 </div>
                             </div>
 
