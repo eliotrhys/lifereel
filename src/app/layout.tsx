@@ -17,21 +17,21 @@ export default function RootLayout({ children } : { children: React.ReactNode })
   return (
     <html lang="en">
       <head>
-        <title>Lifereel</title>
+        <title>The Lifereel Company</title>
         <link rel="icon" type="image/png" href={favicon.src}></link>
-      </head>
-        {/* <title>Lifereel</title>
-        <link rel="stylesheet" href="https://use.typekit.net/dea1mbv.css"></link> */}
+        <link rel="stylesheet" href="https://use.typekit.net/dea1mbv.css" />
         {/* <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/icon.png"></link>
-        <meta name="theme-color" content="#fff" />
-        <meta property="og:title" content="Triviamoji" />
-        <meta property="og:site_name" content="Triviamoji" />
-        <meta property="og:url" content="https://www.triviamoji.com" />
-        <meta property="og:description" content="Triviamoji is a marathon emoji trivia game! Look at the emojis, check the category and give it your best guess! With 1000s of questions and dozens of categories, you can spend hours tickle your brain with the most challenging, and most fun emoji guessing game out there - just don't let the timer run out!" />
+        <link rel="apple-touch-icon" href="/icon.png"></link> */}
+        {/* <meta name="theme-color" content="#fff" /> */}
+        <meta property="og:title" content="The Lifereel Company" />
+        <meta property="og:site_name" content="The Lifereel Company" />
+        <meta property="og:url" content="https://www.lifereel.co.uk" />
+        <meta property="og:description" content="The Lifereel Company creates 'lifereels' - beautiful, bespoke video memoirs which tell the stories of our loved ones. We record a Netflix quality 2-camera interview, and then bring together old family photographs, home movies and gorgeous background music, to create a wonderfully unique film about your loved one&apos;s life. Get in touch to begin your lifereel journey!" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/triviamoji_og.jpg" />
-        <meta name="keywords" content="Triviamoji, Emoji trivia, Emoji guessing game, Emoji trivia challenge, Guess the emoji game, Emoji quiz challenge, Emoji charades game, Emoji puzzle game, Emoji word game, Emoji brain teaser, Emoji guessing competition, Emoji riddle game, Emoji, Guess the emoji" /> */}
+        <meta property="og:image" content="/images/og_lifereel.jpg" />
+        <meta name="keywords" content="Lifereel, lifereel, lifereel company, the lifereel company, The Lifereel Company, the Lifereel Company, video memoirs, memoirs, autobiography, autobiografilm, family history, genealogy" />
+      </head>
+     
       <body>
         {children}
       </body>

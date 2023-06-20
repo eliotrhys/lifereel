@@ -19,7 +19,7 @@ const HowDoesItWork = () => {
                         <div className="mr-4">
                             <div className="bg-green-500 rounded-full p-4 w-16 h-16 flex items-center justify-center font-black text-2xl">2</div>
                         </div>
-                        <div className="text-lg font-medium leading-relaxed">They will accompany you to your loved one&apos;s home and set up a professional 2-camera interview, and they&apos;re there to help with the interview process if needed!</div>
+                        <div className="text-lg font-medium leading-relaxed">They will accompany you to your loved one&apos;s home and set up a beautiful 2-camera interview - they&apos;re also there to help with the interview process if needed!</div>
                     </div>
                 </li>
                 <li>
@@ -51,7 +51,7 @@ const HowDoesItWork = () => {
                         <div className="mr-4">
                             <div className="bg-green-500 rounded-full p-4 w-16 h-16 flex items-center justify-center font-black text-2xl">6</div>
                         </div>
-                        <div className="text-lg font-medium leading-relaxed">The completed lifereel will be delivered to you as a DVD in a premium wooden case, as well as an online private video link. You will also receive a hard drive containing your digitised photographs and home movies.</div>
+                        <div className="text-lg font-medium leading-relaxed">The completed lifereel will be delivered to you as a digital download, and a beautiful video page, which can be shared with friends and family. You&apos;ll also receive a hard drive containing your digitised photographs and home movies!</div>
                     </div>
                 </li>
             </ul>
