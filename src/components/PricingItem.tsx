@@ -4,6 +4,7 @@ interface PricingItemProps {
     image: string;
     description: string;
     price: number;
+    offerPrice?: number;
     features: string[];
     isPremium?: boolean;
 }
@@ -31,7 +32,27 @@ const PricingItem = (props: PricingItemProps) => {
                         <div className="">{props.description}</div>
                     </div>
 
-                    <h4 className="text-3xl font-black">£{props.price}</h4>
+                    {props.offerPrice ? 
+                    (
+                        <div>
+                            <div className="text-sm bg-yellow-500 border border-black px-3 py-1 rounded-md mb-2 inline-block font-semibold uppercase text-slate-800">Limited time offer - 60% off</div>
+                                <div className="flex items-center">
+                                <h4 className="text-xl text-red-500 line-through mr-3">£{props.price}</h4>
+                                <h4 className="text-3xl font-black">£{props.offerPrice}</h4>
+                            </div>
+                        </div>
+                    ) : (
+                        <div>
+                            <div className="flex items-center">
+                                <h4 className="text-3xl font-black">£{props.price}</h4>
+                            </div>
+                        </div>
+                        )
+                    }
+                    
+                    {}
+                    
+                    
                 </div>
                 
                 <div>
