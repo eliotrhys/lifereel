@@ -35,16 +35,20 @@ const PricingItem = (props: PricingItemProps) => {
                     {props.offerPrice ? 
                     (
                         <div>
-                            <div className="text-sm bg-yellow-500 border border-black px-3 py-1 rounded-md mb-2 inline-block font-semibold uppercase text-slate-800">Limited time offer - 60% off</div>
-                                <div className="flex items-center">
-                                <h4 className="text-xl text-red-500 line-through mr-3">£{props.price}</h4>
-                                <h4 className="text-3xl font-black">£{props.offerPrice}</h4>
+                            {/* <div className="text-sm bg-yellow-500 border border-black px-3 py-1 rounded-md mb-2 inline-block font-semibold uppercase text-slate-800">Limited time offer - 60% off</div> */}
+                                <div className="flex items-center justify-center">
+                                {/* <h4 className="text-xl text-red-500 line-through mr-3">£{props.price}</h4> */}
+                                <a href="mailto:oscar@lifereel.co" target="_blank" className={`w-full lg:w-auto p-4 px-12 rounded-lg inline-block font-medium text-md duration-300 ease-in-out text-center border ${props.isPremium ? "border-white bg-slate-900 hover:bg-slate-950 text-cream" : "border-black button-lifereel"}`}>
+                                    <h4 className="text-xl font-medium text-center">Contact for enquiries</h4>
+                                </a>
                             </div>
                         </div>
                     ) : (
                         <div>
-                            <div className="flex items-center">
-                                <h4 className="text-3xl font-black">£{props.price}</h4>
+                            <div className="flex items-center justify-center">
+                                <a href="mailto:oscar@lifereel.co" className="button-lifereel w-full lg:w-auto p-4 px-12 rounded-lg inline-block font-medium text-md duration-300 ease-in-out text-center border border-black">
+                                    <h4 className="text-xl font-medium">Contact for enquiries</h4>
+                                </a>
                             </div>
                         </div>
                         )
