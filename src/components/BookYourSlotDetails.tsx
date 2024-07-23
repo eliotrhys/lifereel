@@ -32,7 +32,7 @@ const BookYourSlot = () => {
                                             <img src={scrap.src} alt="paper scrap" className="w-full" />
                                         </div>
                                     </div>
-                                    <h2 className="text-xl lg:text-2xl font-medium leading-relaxed text-center mb-4"><strong className="bg-lifereel dark p-2 px-4 mx-2 rounded-md">Let's make a Lifereel together!</strong></h2>
+                                    <h2 className="text-xl lg:text-2xl font-medium leading-relaxed text-center mb-4"><strong className="bg-lifereel dark p-2 px-4 mx-2 rounded-md">Let&apos;s make a Lifereel together!</strong></h2>
                                 </div>
 
                                 <div className="flex flex-col justify-center items-center w-full">
