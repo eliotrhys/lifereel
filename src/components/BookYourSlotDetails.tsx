@@ -20,7 +20,7 @@ const BookYourSlot = () => {
                         <div className="col-span-12 lg:col-start-4 lg:col-span-6">
                             <div className="mb-4 px-4 lg:px-0 w-full mx-auto flex justify-center items-end relative">
                                 <div className="w-full">
-                                    <iframe className="aspect-video rounded-lg mx-auto w-full lg:w-auto lg:min-w-[560px] lg:min-h-[315px]" src="https://www.youtube.com/embed/sl6kaf1r0Os?si=pJ8LTxlGD5Aq_Z_h" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                    <iframe className="aspect-video rounded-lg mx-auto w-full lg:w-auto lg:min-w-[560px] lg:min-h-[315px]" src="https://www.youtube.com/embed/Eysrl-bIxow?si=kkXtdw1oAF_pcwsW" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                                 </div>
                             </div>
 
