@@ -49,17 +49,20 @@ const Navbar = (props: NavbarProps) => {
             <div className="px-4 mx-auto flex justify-between items-center">
             
                 <div>
-                    <img src={isScrolled ? logo.src : lightLogo.src} className="h-8" alt="" />
+                    <a href="/">
+                        <img src={isScrolled ? logo.src : lightLogo.src} className="h-8" alt="" />
+                    </a>
                 </div>
 
                 <div className="items-center text-md font-medium hidden lg:flex">
-                    <NavbarItem title="Home" link="#" />
-                    <NavbarItem title="About" link="#about" />
-                    <NavbarItem title="Features" link="#features" />
-                    <NavbarItem title="Examples" link="#examples" />
-                    <NavbarItem title="FAQ" link="#faq" />
-                    <NavbarItem title="Pricing" link="#pricing" />
-                    <NavbarItem title="Contact us" link="#contact" extraClasses="bg-rose-500 hover:bg-rose-700 px-8 font-medium text-rose-100 !mr-0" />
+                    <NavbarItem title="Home" link="/" />
+                    <NavbarItem title="About" link="/#about" />
+                    <NavbarItem title="Features" link="/#features" />
+                    <NavbarItem title="Examples" link="/#examples" />
+                    <NavbarItem title="FAQ" link="/#faq" />
+                    <NavbarItem title="Pricing" link="/#pricing" />
+                    <NavbarItem title="Bookings" link="/bookyourslot" />
+                    <NavbarItem title="Contact us" link="/#contact" extraClasses="bg-rose-500 hover:bg-rose-700 px-8 font-medium text-rose-100 !mr-0" />
                 </div>
 
                 <div className="flex lg:hidden cursor-pointer">
