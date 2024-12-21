@@ -20,7 +20,12 @@ const BookYourSlot = () => {
                         <div className="col-span-12 lg:col-start-4 lg:col-span-6">
                             <div className="mb-4 px-4 lg:px-0 w-full mx-auto flex justify-center items-end relative">
                                 <div className="w-full">
-                                    <iframe className="aspect-video rounded-lg mx-auto w-full lg:w-auto lg:min-w-[560px] lg:min-h-[315px]" src="https://www.youtube.com/embed/Eysrl-bIxow?si=kkXtdw1oAF_pcwsW" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+                                    <div style={{position: "relative", paddingBottom: "56.25%", height: 0}}>
+                                        <iframe src="https://www.loom.com/embed/e7915f4ee027467aa98409ad3a3041c4?sid=129f0e81-8892-4b79-a69e-7d2a274adb32&hide_share=true&hideEmbedTopBar=true&hide_title=true&hide_owner=true&hide_speed=true" className="rounded-lg" frameBorder="0"  allowFullScreen style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%"}}></iframe>
+                                    </div>
+                                    
+                                    {/* <iframe className="aspect-video rounded-lg mx-auto w-full lg:w-auto lg:min-w-[560px] lg:min-h-[315px]" src="https://www.youtube.com/embed/Eysrl-bIxow?si=kkXtdw1oAF_pcwsW" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
                                 </div>
                             </div>
 
