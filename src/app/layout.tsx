@@ -1,9 +1,14 @@
 "use client"
+// @ts-nocheck
 
 import Head from 'next/head'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import favicon from "./favicon.png";
+import Script from 'next/script';
+import { useEffect } from 'react';
+
+const META_PIXEL_ID = "3828535074040605";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,6 +19,24 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children } : { children: React.ReactNode }) 
 {
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && !(window as any).fbq) {
+      (window as any).fbq = function () {
+        (window as any).fbq.callMethod
+          ? (window as any).fbq.callMethod.apply((window as any).fbq, arguments)
+          : (window as any).fbq.queue.push(arguments);
+      };
+      (window as any).fbq.queue = [];
+      (window as any).fbq.loaded = true;
+      (window as any).fbq.version = "2.0";
+      (window as any).fbq.push = (window as any).fbq;
+      (window as any).fbq("init", META_PIXEL_ID);
+      (window as any).fbq("track", "PageView");
+    }
+  }, []);
+
+
   return (
     <html lang="en">
       <head>
@@ -30,6 +53,33 @@ export default function RootLayout({ children } : { children: React.ReactNode })
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/images/og_lifereel.jpg" />
         <meta name="keywords" content="Lifereel, lifereel, lifereel company, the lifereel company, The Lifereel Company, the Lifereel Company, video memoirs, memoirs, autobiography, autobiografilm, family history, genealogy" />
+
+        {/* Load Meta Pixel Script */}
+        <Script
+          id="meta-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              <!-- Meta Pixel Code -->
+                <script>
+                !function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '${META_PIXEL_ID}');
+                fbq('track', 'PageView');
+                </script>
+                <noscript><img height="1" width="1" style="display:none"
+                src="https://www.facebook.com/tr?id=3828535074040605&ev=PageView&noscript=1"
+                /></noscript>
+              <!-- End Meta Pixel Code -->
+            `,
+          }}
+        />
       </head>
      
       <body>
