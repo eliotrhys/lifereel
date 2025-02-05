@@ -19,18 +19,15 @@ const inter = Inter({ subsets: ['latin'] })
 export default function RootLayout({ children } : { children: React.ReactNode }) 
 {
 
-  const [isCalendlyPage, setIsCalendlyPage] = useState(false);
+  const [isCalendlyPage, setIsCalendlyPage] = useState<null | boolean>(null); // Initial state is null to prevent rendering issues
 
   useEffect(() => {
-    // Ensure we're running only on the client
     const currentPath = window.location.pathname;
-
-    if (currentPath === '/bookyourslot') {
-      setIsCalendlyPage(true);  // Set the flag for the Calendly page
-    } else {
-      setIsCalendlyPage(false);  // Set the flag for the other page
-    }
+    setIsCalendlyPage(currentPath === '/bookyourslot');
   }, []);
+
+  // Prevent rendering until state is determined (isCalendlyPage is not null)
+  if (isCalendlyPage === null) return null;
 
   return (
     <html lang="en">
