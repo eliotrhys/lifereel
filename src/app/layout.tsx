@@ -1,5 +1,4 @@
 "use client"
-// @ts-nocheck
 
 import Head from 'next/head'
 import './globals.css'
@@ -28,6 +27,8 @@ export default function RootLayout({ children } : { children: React.ReactNode })
 
     if (currentPath === '/bookyourslot') {
       setIsCalendlyPage(true);  // Set the flag for the Calendly page
+    } else {
+      setIsCalendlyPage(false);  // Set the flag for the other page
     }
   }, []);
 
@@ -70,9 +71,11 @@ export default function RootLayout({ children } : { children: React.ReactNode })
           />
         )}
 
+        {!isCalendlyPage && (
         <noscript>
           <img height="1" width="1" style={{display: "none"}} src="https://www.facebook.com/tr?id=3828535074040605&ev=PageView&noscript=1"/>
         </noscript>
+        )}
       </head>
      
       <body>
