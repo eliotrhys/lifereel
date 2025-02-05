@@ -20,40 +20,16 @@ const inter = Inter({ subsets: ['latin'] })
 export default function RootLayout({ children } : { children: React.ReactNode }) 
 {
 
-  const [calendlyLoaded, setCalendlyLoaded] = useState(false);
+  const [isCalendlyPage, setIsCalendlyPage] = useState(false);
 
   useEffect(() => {
-    // Prevent the PageView event from firing more than once
-    if (typeof window !== "undefined" && !(window as any).fbq.isPageViewFired) {
-      (window as any).fbq('track', 'PageView');
-      (window as any).fbq.isPageViewFired = true;  // Mark PageView as fired
+    // Ensure we're running only on the client
+    const currentPath = window.location.pathname;
+
+    if (currentPath === '/bookyourslot') {
+      setIsCalendlyPage(true);  // Set the flag for the Calendly page
     }
-
-    // Scroll event listener to detect Calendly iframe visibility
-    const handleScroll = () => {
-      const calendlyIframe = document.querySelector('iframe[src*="calendly.com"]');
-      
-      if (calendlyIframe) {
-        const rect = calendlyIframe.getBoundingClientRect();
-        
-        // Check if the iframe is in the viewport
-        if (rect.top >= 0 && rect.bottom <= window.innerHeight && !calendlyLoaded) {
-          // If Calendly iframe is in the viewport and hasn't been loaded yet, fire the pixel event
-          (window as any).fbq('track', 'PageView');
-          setCalendlyLoaded(true);  // Prevent firing again
-        }
-      }
-    };
-
-    // Add scroll listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the scroll listener
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [calendlyLoaded]);
-
+  }, []);
 
   return (
     <html lang="en">
@@ -73,12 +49,12 @@ export default function RootLayout({ children } : { children: React.ReactNode })
         <meta name="keywords" content="Lifereel, lifereel, lifereel company, the lifereel company, The Lifereel Company, the Lifereel Company, video memoirs, memoirs, autobiography, autobiografilm, family history, genealogy" />
 
         {/* Load Meta Pixel Script */}
-        <Script
-          id="meta-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-            if (!window.fbq) {
+        {!isCalendlyPage && (
+          <Script
+            id="meta-pixel"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
                 !function(f,b,e,v,n,t,s)
                 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
                 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -89,10 +65,10 @@ export default function RootLayout({ children } : { children: React.ReactNode })
                 'https://connect.facebook.net/en_US/fbevents.js');
                 fbq('init', '${META_PIXEL_ID}');
                 fbq('track', 'PageView');
-            }
-            `,
-          }}
-        />
+              `,
+            }}
+          />
+        )}
 
         <noscript>
           <img height="1" width="1" style={{display: "none"}} src="https://www.facebook.com/tr?id=3828535074040605&ev=PageView&noscript=1"/>
