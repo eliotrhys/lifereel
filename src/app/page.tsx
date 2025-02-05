@@ -37,7 +37,6 @@ export default function Home() {
           id="meta-pixel"
           dangerouslySetInnerHTML={{
             __html: `
-            if (!window.fbq) {
                 !function(f,b,e,v,n,t,s)
                 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
                 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -48,7 +47,6 @@ export default function Home() {
                 'https://connect.facebook.net/en_US/fbevents.js');
                 fbq('init', '${META_PIXEL_ID}');
                 fbq('track', 'PageView');
-            }
             `,
           }}
         />
