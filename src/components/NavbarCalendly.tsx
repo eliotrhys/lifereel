@@ -6,11 +6,11 @@ import lightLogo from "../../public/images/lightLogo.png";
 
 import { useEffect, useState } from "react";
 
-interface NavbarProps {
+interface NavbarCalendlyProps {
     onMenuToggle: () => void;
   }
 
-const Navbar = (props: NavbarProps) => {
+const NavbarCalendly = (props: NavbarCalendlyProps) => {
 
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -56,13 +56,13 @@ const Navbar = (props: NavbarProps) => {
 
                 <div className="items-center text-md font-medium hidden lg:flex">
                     <NavbarItem title="Home" link="/" />
-                    <NavbarItem title="About" link="#about" />
-                    <NavbarItem title="Features" link="#features" />
-                    <NavbarItem title="Examples" link="#examples" />
-                    <NavbarItem title="FAQ" link="#faq" />
-                    <NavbarItem title="Pricing" link="#pricing" />
+                    <NavbarItem title="About" link="/#about" />
+                    <NavbarItem title="Features" link="/#features" />
+                    <NavbarItem title="Examples" link="/#examples" />
+                    <NavbarItem title="FAQ" link="/#faq" />
+                    <NavbarItem title="Pricing" link="/#pricing" />
                     <NavbarItem title="Bookings" link="/bookyourslot" />
-                    <NavbarItem title="Contact us" link="#contact" extraClasses="bg-rose-500 hover:bg-rose-700 px-8 font-medium text-rose-100 !mr-0" />
+                    <NavbarItem title="Contact us" link="/#contact" extraClasses="bg-rose-500 hover:bg-rose-700 px-8 font-medium text-rose-100 !mr-0" />
                 </div>
 
                 <div className="flex lg:hidden cursor-pointer">
@@ -82,4 +82,4 @@ const Navbar = (props: NavbarProps) => {
     )
 }
 
-export default Navbar;
+export default NavbarCalendly;
