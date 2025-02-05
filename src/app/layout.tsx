@@ -62,25 +62,8 @@ export default function RootLayout({ children } : { children: React.ReactNode })
                 s.parentNode.insertBefore(t,s)}(window, document,'script',
                 'https://connect.facebook.net/en_US/fbevents.js');
                 fbq('init', '${META_PIXEL_ID}');
-      
-                window.fbDidPageView = false;
-
-                window.addEventListener("load", function () {
-                    if (!window.location.hash) {
-                        fbq('track', 'PageView');
-                        window.fbDidPageView = true;
-                    }
-                });
-
-                window.addEventListener("hashchange", function () {
-                    if (!window.fbDidPageView) {
-                        fbq('track', 'PageView');
-                        window.fbDidPageView = true;
-                    } else {
-                        console.log("Ignoring hash change PageView");
-                    }
-                });
-
+                fbq('track', 'PageView');
+                fbq.disablePushState = true;
               `,
             }}
           />
