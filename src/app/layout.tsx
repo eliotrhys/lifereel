@@ -62,7 +62,9 @@ export default function RootLayout({ children } : { children: React.ReactNode })
                 s.parentNode.insertBefore(t,s)}(window, document,'script',
                 'https://connect.facebook.net/en_US/fbevents.js');
                 fbq('init', '${META_PIXEL_ID}');
-                fbq('track', 'PageView');
+                if (!window.location.hash) {
+                  fbq('track', 'PageView'); // Fire only when there's no hash change
+                }
               `,
             }}
           />
