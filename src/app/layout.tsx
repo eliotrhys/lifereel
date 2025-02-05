@@ -53,6 +53,20 @@ export default function RootLayout({ children } : { children: React.ReactNode })
                 'https://connect.facebook.net/en_US/fbevents.js');
                 fbq('init', '${META_PIXEL_ID}');
                 fbq('track', 'PageView');
+
+
+                // Prevent duplicate PageView events from Calendly
+                const originalFbq = fbq;
+                fbq = function(event, ...args) {
+                  if (event === "PageView" && window.fbqPageViewTracked) {
+                    console.log("Duplicate PageView blocked.");
+                    return;
+                  }
+                  if (event === "PageView") {
+                    window.fbqPageViewTracked = true;
+                  }
+                  originalFbq(event, ...args);
+                };
             }
             `,
           }}
