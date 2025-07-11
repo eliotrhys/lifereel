@@ -1,5 +1,6 @@
 import tree from "../../public/images/illustrations/tree.svg"
 import oscarDesk from "../../public/images/photos/oscar_desk.png";
+import oscar1 from "../../public/images/photos/oscar1.jpeg";
 
 const Footer = () => {
     return (
@@ -24,7 +25,7 @@ const Footer = () => {
                     <div className="lg:w-2/3 mx-auto">
                         <div className="text-center mb-12">
                             <div className="mb-6">
-                                <img src={oscarDesk.src} className="w-full rounded-lg" alt="" />
+                                <img src={oscar1.src} className="w-full rounded-lg" alt="" />
                             </div>
                             
                             <a href="mailto:oscar@lifereel.co" className="text-center text-2xl lg:text-5xl font-black !cursor-pointer !hover:cursor-pointer bg-rose-500 text-cream p-4 lg:p-12 inline-block w-full rounded-lg hover:scale-110 duration-100 ease"><h2>📬 oscar@lifereel.co</h2></a>
