@@ -1,7 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import favicon from "./favicon.png";
-import Script from 'next/script';
 import ClientLayout from './ClientLayout';
 
 const META_PIXEL_ID = "3828535074040605";
@@ -11,6 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'The Lifereel Company',
   description: 'The Lifereel Company creates beautiful, bespoke video memoirs which tell the stories of our loved ones.',
+  metadataBase: new URL('https://www.lifereel.co.uk'),
   keywords: 'Lifereel, lifereel, lifereel company, the lifereel company, The Lifereel Company, the Lifereel Company, video memoirs, memoirs, autobiography, autobiografilm, family history, genealogy',
   openGraph: {
     title: 'The Lifereel Company',

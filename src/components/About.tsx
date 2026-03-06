@@ -1,6 +1,5 @@
+import Image from "next/image";
 import Button from "./Button";
-import scratch from "../../public/images/shapes/scratch.svg";
-import oscar from "../../public/images/photos/oscar.jpg";
 import oscar2 from "../../public/images/photos/oscar2.jpg";
 
 const About = () => {
@@ -15,7 +14,7 @@ const About = () => {
 
                         <div className="flex items-center">
                             <div>
-                                <img src={oscar2.src} className="w-full rounded-lg" alt="" />
+                                <Image src={oscar2} className="w-full rounded-lg" alt="" />
                             </div>
                         </div>
 

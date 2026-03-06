@@ -1,7 +1,7 @@
 "use client"
 
 import Script from 'next/script';
-import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 interface ClientLayoutProps {
   children: React.ReactNode;
@@ -9,15 +9,8 @@ interface ClientLayoutProps {
 }
 
 export default function ClientLayout({ children, metaPixelId }: ClientLayoutProps) {
-  const [isCalendlyPage, setIsCalendlyPage] = useState<null | boolean>(null);
-
-  useEffect(() => {
-    const currentPath = window.location.pathname;
-    setIsCalendlyPage(currentPath === '/bookyourslot');
-  }, []);
-
-  // Prevent rendering until state is determined (isCalendlyPage is not null)
-  if (isCalendlyPage === null) return null;
+  const pathname = usePathname();
+  const isCalendlyPage = pathname === '/bookyourslot';
 
   return (
     <>
@@ -46,7 +39,8 @@ export default function ClientLayout({ children, metaPixelId }: ClientLayoutProp
 
       {!isCalendlyPage && (
         <noscript>
-          <img height="1" width="1" style={{display: "none"}} src="https://www.facebook.com/tr?id=3828535074040605&ev=PageView&noscript=1"/>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img height="1" width="1" style={{ display: "none" }} src="https://www.facebook.com/tr?id=3828535074040605&ev=PageView&noscript=1" alt="" />
         </noscript>
       )}
 

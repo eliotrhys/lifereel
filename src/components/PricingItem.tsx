@@ -1,7 +1,9 @@
+import Image, { StaticImageData } from "next/image";
+
 interface PricingItemProps {
     title: string;
     icon: string;
-    image: string;
+    image: StaticImageData;
     description: string;
     price: number;
     offerPrice?: number;
@@ -18,7 +20,7 @@ const PricingItem = (props: PricingItemProps) => {
             {props.isPremium && <div className="py-2 px-8 rounded-lg bg-yellow-500 border border-black text-black font-medium absolute left-1/2 transform -translate-x-1/2 -mt-5 z-10 text-center whitespace-nowrap">Recommended</div> }
 
             <div className="p-8">
-                <img src={props.image} className={`rounded-lg border ${props.isPremium ? "border-slate-500" : "border-slate-800"}`} alt="" />
+                <Image src={props.image} className={`rounded-lg border ${props.isPremium ? "border-slate-500" : "border-slate-800"}`} alt="" />
             </div>
 
             <div className="">

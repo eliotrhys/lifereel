@@ -1,4 +1,5 @@
-import { ChangeEvent, useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import logo from "../../public/images/lightLogo.png";
 import NavbarItem from "./NavbarItem";
 
@@ -17,7 +18,7 @@ export default function SideMenu(props: SideMenuProps) {
     <div>
       <div className={`offcanvas-menu ${props.isOpen ? "open" : ""} z-30 bg-lifereel`}>
         <div className="text-right flex justify-between my-6 px-4">
-          <a href="/"><img src={logo.src} style={{ height: "36px" }} alt={"Lifereel Logo"} /></a>
+          <Link href="/"><Image src={logo} style={{ height: "36px", width: "auto" }} alt={"Lifereel Logo"} /></Link>
           <div>
             <button onClick={handleClose} className="border hover:text-white h-10 w-10 p-2 flex items-center justify-center text-xl rounded-full ease-in-out duration-100">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>

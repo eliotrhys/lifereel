@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 import AsSeenOnItem from "./AsSeenOnItem";
@@ -56,7 +57,7 @@ const Jumbotron = () => {
                                 animate={{ x: [-800, 0]} } 
                                 transition={{ duration: 0.4 }}
                             >
-                                <img src={threePhotos.src} alt="" className="w-full" />
+                                <Image src={threePhotos} alt="" className="w-full" />
                             </motion.div>
                         </div>
 
@@ -72,7 +73,7 @@ const Jumbotron = () => {
                                     <div className="relative">
                                         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl xxl:text-8xl font-black text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-slate-900 whitespace-nowrap">We Make Lifereels<span className="text-rose-500 ml-1">.</span></h1>
                                         <div>
-                                            <img src={scrap.src} alt="paper scrap" className="w-full" />
+                                            <Image src={scrap} alt="paper scrap" className="w-full" />
                                         </div>
                                     </div>
                                     <h2 className="text-xl lg:text-2xl font-medium leading-relaxed text-center mb-4"><strong className="bg-lifereel dark p-2 px-4 mx-2 rounded-md">Video memoirs</strong></h2>
@@ -83,7 +84,7 @@ const Jumbotron = () => {
 
                                 <div className="flex flex-col justify-center items-center w-full">
                                     <div>
-                                        <img src={underline.src} className="h-4 lg:h-10" alt="underline" />
+                                        <Image src={underline} className="h-4 lg:h-10 w-auto" alt="underline" />
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +96,7 @@ const Jumbotron = () => {
                                     animate={{ x: [800, 0]} } 
                                     transition={{ duration: 0.4, delay: 0.2 }}
                                 >
-                                    <img src={videos.src} alt="videos" className="" />
+                                    <Image src={videos} alt="videos" className="" />
                                 </motion.div>
                             </div>
                         </div>
@@ -160,7 +161,7 @@ const Jumbotron = () => {
                         <div className="grid lg:grid-cols-2 gap-14 mb-12">
                             <div>
                                 <div className="">
-                                    <img src={interviewImage.src} className="w-full rounded-lg" alt="" />
+                                    <Image src={interviewImage} className="w-full rounded-lg" alt="" />
                                 </div>
                             </div>
                             <div className="flex items-center">

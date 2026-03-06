@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image";
+import Link from "next/link";
 import NavbarItem from "./NavbarItem";
 import logo from "../../public/images/logo.png";
 import lightLogo from "../../public/images/lightLogo.png";
@@ -49,9 +51,9 @@ const Navbar = (props: NavbarProps) => {
             <div className="px-4 mx-auto flex justify-between items-center">
             
                 <div>
-                    <a href="/">
-                        <img src={isScrolled ? logo.src : lightLogo.src} className="h-8" alt="" />
-                    </a>
+                    <Link href="/">
+                        <Image src={isScrolled ? logo : lightLogo} className="h-8 w-auto" alt="" />
+                    </Link>
                 </div>
 
                 <div className="items-center text-md font-medium hidden lg:flex">

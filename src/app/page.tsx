@@ -1,7 +1,5 @@
 "use client";
 
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import Jumbotron from '@/components/Jumbotron'
 import Navbar from '@/components/Navbar'
 import Features from '@/components/Features'
@@ -14,8 +12,6 @@ import Examples from '@/components/Examples'
 import LifereelAcademy from '@/components/LifereelAcademy'
 import { useState } from 'react'
 import SideMenu from '@/components/SideMenu'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 

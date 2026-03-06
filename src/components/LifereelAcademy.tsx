@@ -1,4 +1,4 @@
-import tree from "../../public/images/tree.png";
+import Image from "next/image";
 import lifereelAcademy from "../../public/images/lifereel-academy.png";
 
 import Button from "./Button";
@@ -17,7 +17,7 @@ const LifereelAcademy = () => {
                     <div className="p-10 xl:p-6 text-cream">
                         <div className="mb-10">
                             <div className="mb-6">
-                                <img src={lifereelAcademy.src} className="h-12" alt="" />
+                                <Image src={lifereelAcademy} className="h-12 w-auto" alt="" />
                             </div>
                             <h4 className="text-4xl font-black mb-8 text-cream">Fancy making one yourself?</h4>
 
